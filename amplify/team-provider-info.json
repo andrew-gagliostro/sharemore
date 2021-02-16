@@ -1,0 +1,20 @@
+{
+  "smdev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sharemore-smdev-173247-authRole",
+      "UnauthRoleArn": "arn:aws:iam::076684281001:role/amplify-sharemore-smdev-173247-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::076684281001:role/amplify-sharemore-smdev-173247-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-sharemore-smdev-173247-deployment",
+      "UnauthRoleName": "amplify-sharemore-smdev-173247-unauthRole",
+      "StackName": "amplify-sharemore-smdev-173247",
+      "StackId": "arn:aws:cloudformation:us-east-1:076684281001:stack/amplify-sharemore-smdev-173247/e62a0e50-70a6-11eb-a504-120bf1e0775b",
+      "AmplifyAppId": "d3t6pbgu835496"
+    },
+    "categories": {
+      "auth": {
+        "sharemoreea7d1a79": {}
+      }
+    }
+  }
+}

@@ -1,13 +1,194 @@
-body {
+/* Global Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-weight: 260;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 50;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #121c27;
+}
+
+/* Nav Section */
+
+.main-head {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./assets/tim-mossholder-bo3SHP58C3g-unsplash.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.home-head {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./assets/tim-mossholder-bo3SHP58C3g-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.home-head h3 {
+  font-weight: 200;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Courier New", monospace;
+  font-weight: 500;
+}
+
+/*about info section */
+.about-info {
+  background: burlywood;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: hue;
+  min-height: 50vh;
+  font-family: "Courier New", monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-info h3 {
+  padding: 8rem;
+  font-weight: 300;
+  color: #121c27;
+}
+
+/* Hero Section */
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./assets/tim-mossholder-bo3SHP58C3g-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 43vh;
+  font-family: "Courier New", monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home-hero {
+  background-position: center;
+  min-height: 43vh;
+  font-family: "Courier New", monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 3rem;
+}
+
+.hero .wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.about-head {
+  font-size: 1rem;
+  justify-content: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", monospace;
+  background: rgb(1, 134, 152);
+  color: white;
+  opacity: 0.7;
+}
+/* Featured Books and Books Section */
+
+.shop-head {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: rgb(1, 134, 152);
+  color: white;
+  opacity: 0.75;
 }
