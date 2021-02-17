@@ -1,21 +1,58 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import { AmplifyAuthenticator, AmplifySignOut, AmplifySignIn } from '@aws-amplify/ui-react';
 import Amplify, {Auth} from 'aws-amplify';
+import { Hub } from 'aws-amplify';
+
+
 
 
 const HomeHead = () => {
 
-
-    const temp = Auth.currentAuthenticatedUser();
-    const linkTo = "/sisu";
-    const show = "Sign in / Sign Up";
     
+    let [redir, setredir] = useState({path:"/sisu", show:"Sign In/Sign Up"})
+    
+    let [user, setUser] = useState(null)
+  
+    useEffect(() => {
+        let updateUser = async () => {
+        try {
+            let user = await Auth.currentAuthenticatedUser()
+            setUser(user)
+            setredir({path:"/shop", show:"Sign Out"})
+        } catch {
+            setUser(null)
+        }
+        }
+        Hub.listen('auth', updateUser); // listen for login/signup events
 
-    if(temp != null) {
-        const linkTo = "/shop";
-        const show = "Sign Out"; 
+    // we are not using async to wait for updateUser, so there will be a flash of page where the user is assumed not to be logged in. If we use a flag 
+        updateUser(); // check manually the first time because we won't get a Hub event // cleanup
+    }, []);
+
+
+    /*
+
+    useEffect(() => {
+    let updateUser = async authState => {
+      try {
+        let user = await Auth.currentAuthenticatedUser()
+        setUser(user)
+      } catch {
+        setUser(null)
+      }
+      if(user!=null){
+        setredir({path:"/signout", show:"Sign out"});
+      }
     }
+    Hub.listen('auth', updateUser) // listen for login/signup events
+    updateUser() // check manually the first time because we won't get a Hub event
+    return () => Hub.remove('auth', updateUser) // cleanup
+  }, [redir, user]);
+
+    */
+
+
 
     return (
         <section className="home-head">
@@ -30,7 +67,7 @@ const HomeHead = () => {
                         <Link to="/shop">Shop ShareMore</Link>
                     </li>
                     <li>
-                    <Link to={linkTo}> {show}</Link>
+                        <Link to={redir.path}> {redir.show} </Link>
                     </li>
                 </ul>
             </nav>

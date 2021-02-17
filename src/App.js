@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import awsExports from "./aws-exports";
 import SiSu from "./pages/SiSu";
+
 Amplify.configure(awsExports);
 
 
