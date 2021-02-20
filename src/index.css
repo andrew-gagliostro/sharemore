@@ -42,6 +42,7 @@ h3 {
 h4,
 h5 {
   font-size: 2.5rem;
+  font-weight: 100;
 }
 
 a {
@@ -135,8 +136,7 @@ nav ul {
 
 /*about info section */
 .about-info {
-  background: burlywood;
-  opacity: 1;
+  background: rgb(216, 188, 152);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -149,7 +149,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  opacity: 100%;
+  opacity: 85%;
 }
 
 .about-info h4 {
