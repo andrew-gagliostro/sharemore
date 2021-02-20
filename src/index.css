@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
 h1 {
@@ -41,7 +41,7 @@ h3 {
 
 h4,
 h5 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
 }
 
 a {
@@ -85,9 +85,14 @@ a {
   font-weight: 200;
 }
 
+.homepics {
+  max-width: 40vw;
+  max-height: 50vh;
+}
+
 nav {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   align-items: center;
   min-height: 10vh;
   padding: 2rem;
@@ -103,14 +108,29 @@ nav ul {
   list-style: none;
 }
 
+#homenav {
+  display: flex;
+  flex: 2 1 70rem;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+.nav-border {
+  list-style-position: inside;
+  border-right: 1.5px solid white;
+  border-left: 1px solid white;
+}
+
 #logo {
-  flex: 2 1 40rem;
-  font-family: "Courier New", monospace;
+  flex: 2 1 30rem;
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: 500;
 }
 
 #logo li {
-  font-size: 1 rem;
+  font-size: 2 rem;
 }
 
 /*about info section */
@@ -122,19 +142,24 @@ nav ul {
   background-position: center;
   background-blend-mode: hue;
   min-height: 50vh;
-  font-family: "Courier New", monospace;
+  font-family: "Trebuchet MS", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  opacity: 85%;
 }
 
-.about-info h3 {
-  padding: 8rem;
-  font-weight: 300;
+.about-info h4 {
+  padding: 3rem;
+  font-weight: 150;
   color: #121c27;
+}
+
+.about-info img {
+  padding: 2 rem;
 }
 
 /* Hero Section */
@@ -146,7 +171,7 @@ nav ul {
   background-size: cover;
   background-position: center;
   min-height: 43vh;
-  font-family: "Courier New", monospace;
+  font-family: "Trebuchet MS", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
@@ -157,7 +182,7 @@ nav ul {
 .home-hero {
   background-position: center;
   min-height: 43vh;
-  font-family: "Courier New", monospace;
+  font-family: "Trebuchet MS", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
@@ -176,14 +201,15 @@ nav ul {
 }
 
 .about-head {
+  font-size: 3rem;
   justify-content: left;
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-family: "Courier New", monospace;
+  font-family: "Trebuchet MS", sans-serif;
   background: rgb(1, 134, 152);
   color: white;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 /* Featured Books and Books Section */
 
@@ -195,4 +221,12 @@ nav ul {
   background: rgb(1, 134, 152);
   color: white;
   opacity: 0.75;
+}
+
+.account-links {
+  display: flex;
+  padding-right: 5 px;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }

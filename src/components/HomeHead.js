@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AmplifyAuthenticator, AmplifySignOut, AmplifySignIn } from '@aws-amplify/ui-react';
 import Amplify, {Auth} from 'aws-amplify';
 import { Hub } from 'aws-amplify';
+import AccountLinks from './AccountLinks';
 
 
 
@@ -10,9 +11,11 @@ import { Hub } from 'aws-amplify';
 const HomeHead = () => {
 
     
+    /*
     let [redir, setredir] = useState({path:"/sisu", show:"Sign In/Sign Up"})
     
     let [user, setUser] = useState(null)
+    const button = <Link/>;
   
     useEffect(() => {
         let updateUser = async () => {
@@ -20,6 +23,7 @@ const HomeHead = () => {
             let user = await Auth.currentAuthenticatedUser()
             setUser(user)
             setredir({path:"/shop", show:"Sign Out"})
+            button = <Link to="/admin"> My Account </Link>
         } catch {
             setUser(null)
         }
@@ -29,6 +33,7 @@ const HomeHead = () => {
     // we are not using async to wait for updateUser, so there will be a flash of page where the user is assumed not to be logged in. If we use a flag 
         updateUser(); // check manually the first time because we won't get a Hub event // cleanup
     }, []);
+    */
 
 
     /*
@@ -59,6 +64,7 @@ const HomeHead = () => {
         <header>
             <nav>
                 <h1 id="logo">ShareMore</h1>
+                <div id="homenav">
                 <ul>
                     <li>
                         <Link to="/">Home</Link>
@@ -66,10 +72,9 @@ const HomeHead = () => {
                     <li>
                         <Link to="/shop">Shop ShareMore</Link>
                     </li>
-                    <li>
-                        <Link to={redir.path}> {redir.show} </Link>
-                    </li>
                 </ul>
+                <AccountLinks></AccountLinks>
+                </div>
             </nav>
         </header>
         <section className="home-hero">
