@@ -2,8 +2,10 @@ import React from "react";
 import Hero from "../components/Hero";
 import Header from "../components/Header";
 import HomeHead from "../components/HomeHead";
-import FirstPic from "../assets/jakob-owens-olHGGd_zYtE-unsplash.jpg"
-import SecondPic from "../assets/nina-strehl-Ds0ZIA5gzc4-unsplash.jpg"
+import FirstPic from "../assets/jakob-owens-olHGGd_zYtE-unsplash.jpg";
+import SecondPic from "../assets/nina-strehl-Ds0ZIA5gzc4-unsplash.jpg";
+import ThirdPic from "../assets/anthony-delanoix-hzgs56Ze49s-unsplash.jpg";
+import LastPic from "../assets/joel-muniz-A4Ax1ApccfA-unsplash.jpg";
 
 const Home = () => {
     return (
@@ -34,7 +36,17 @@ const Home = () => {
                 <h4>Public figures: choose your cause and list anything: 
                     from an autographed ball to a pair of shoes in the back of your closet</h4>
 
+                <img className="homepics"src={ThirdPic}></img>
+
                 <h4>Fans: find something that strikes a chord and buy now or place a bid!</h4>
+
+                <img className="homepics"src={LastPic}></img>
+
+                <h4>Everyone: donating is just one of the endless ways to help the world around us. 
+                    Be Kind, Spread Love, and Share More.
+                </h4>
+
+                
             </section>
         </>
     )
