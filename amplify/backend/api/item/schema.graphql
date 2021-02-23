@@ -1,0 +1,21 @@
+type Item
+  @model(subscriptions: null)
+  @auth(
+    rules: [
+      # allow admins to create, update and delete books
+      { allow: groups, groups: ["Admin"] }
+      # allow all authenticated users to view books
+      { allow: private, operations: [read] }
+      # allow all guest users (not authenticated) to view books
+      { allow: public, operations: [read] }
+    ]
+  ) {
+  id: ID!
+  itemSeller: String!
+  itemName: String!
+  description: String
+  image: String
+  featured: Boolean
+  curPrice: Float
+  endDate: String!
+}

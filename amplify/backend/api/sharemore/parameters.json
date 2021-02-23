@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "sharemore",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authsharemoreea7d1a79",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

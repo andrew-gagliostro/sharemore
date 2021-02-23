@@ -6,5 +6,30 @@
       "dependsOn": [],
       "customAuth": false
     }
+  },
+  "api": {
+    "sharemore": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authsharemoreea7d1a79"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "apiKeyExpirationDays": 365,
+                "description": "guest user access to items"
+              }
+            }
+          ]
+        }
+      }
+    }
   }
 }
