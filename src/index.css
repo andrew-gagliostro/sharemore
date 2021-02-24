@@ -229,3 +229,154 @@ nav ul {
   align-items: center;
   list-style: none;
 }
+
+.admin-wrapper {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem 0;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px #c7c7c7 solid;
+  padding: 2rem;
+}
+
+.form-image {
+  flex: 1 1 50rem;
+}
+
+.image-preview {
+  width: 35rem;
+}
+
+.form-fields {
+  flex: 3 1 50rem;
+  text-align: left;
+}
+
+.form-fields input {
+  width: 100%;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.form-fields textarea {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.form-wrapper label {
+  margin: 0rem 2rem;
+  text-align: left;
+}
+
+.title-form,
+.description-form,
+.author-form,
+.price-form,
+.submit-form,
+.featured-form {
+  padding: 0.7rem;
+}
+
+.form-fields .featured-checkbox {
+  width: 2rem;
+  position: relative;
+  top: 1.4rem;
+}
+
+.submit-form {
+  width: 100%;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  width: 48rem;
+  height: 30rem;
+  margin: 4rem 5rem;
+  border-top: 1px solid #efefef;
+  background: floralwhite;
+}
+
+.featured-list {
+  justify-content: space-evenly;
+}
+
+.featured-item {
+  margin: 4rem 0;
+}
+
+.item-image {
+  flex: 3 1 100rem;
+  padding: 2rem 0rem;
+}
+
+.item-link {
+  flex: 1 1 100rem;
+  background: #55606c;
+  font-size: 1.7rem;
+  width: 100%;
+  height: 100%;
+}
+
+.item-link:hover {
+  background: #343c43;
+}
+
+.item img {
+  min-height: 10vh;
+  height: 21vh;
+}
+
+/* Item Details Section */
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+  text-align: center;
+}
+
+.detail-image {
+  max-height: 40vh;
+  max-width: 60vw;
+  padding-bottom: 3 rem;
+}
+
+.detail-description {
+  display: flex;
+  flex: 1 1 50rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 75%;
+  padding: 0 5rem;
+}

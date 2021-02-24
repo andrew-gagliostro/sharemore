@@ -1,6 +1,6 @@
 {
     "identityPoolName": "sharemoreea7d1a79_identitypool_ea7d1a79",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "sharemea7d1a79",
     "userPoolName": "sharemoreea7d1a79_userpool_ea7d1a79",
     "autoVerifiedAttributes": [

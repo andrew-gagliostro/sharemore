@@ -13,6 +13,8 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import awsExports from "./aws-exports";
 import SiSu from "./pages/SiSu";
+import Admin from "./pages/Admin";
+import ItemDetails from "./pages/ItemDetails";
 
 Amplify.configure(awsExports);
 
@@ -29,6 +31,13 @@ const App = () => {
         </Route>
         <Route exact path="/sisu">
           <SiSu />
+        </Route>
+        <Route exact path="/admin">
+          <Admin />
+        </Route>
+        <Route
+          path="/items/:id"
+          children={<ItemDetails></ItemDetails>}>
         </Route>
       </Switch>
     </Router>
