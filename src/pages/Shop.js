@@ -15,13 +15,14 @@ const Shop = () => {
 
 
     return (
-        <section>
-        <Header/>
+        <>
+        <HomeHead/>
         <section className="shop-head">
             <h3>
                 Happy Shopping!
             </h3>
         </section>
+        <section className="shop-back">
         <div className="items featured-list">
             {featured.map(({ id, image, itemSeller, itemName, curPrice, endDate}) => (
                 <article key={id} className="item featured-item">
@@ -37,6 +38,7 @@ const Shop = () => {
             ))}
         </div>
         </section>
+        </>
     )
 }
 

@@ -63,7 +63,7 @@ const HomeHead = () => {
         <section className="home-head">
         <header>
             <nav>
-                <h1 id="logo">ShareMore</h1>
+                <h2 id="logo">ShareMore</h2>
                 <div id="homenav">
                 <ul>
                     <li>
