@@ -125,6 +125,7 @@ nav ul {
 }
 
 #logo {
+  color: white;
   flex: 2 1 30rem;
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 500;
@@ -136,14 +137,14 @@ nav ul {
 
 /*about info section */
 .about-info {
-  background: rgb(216, 188, 152);
+  color: white;
+  background: rgb(2, 68, 74);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-blend-mode: hue;
   min-height: 50vh;
   font-family: "Trebuchet MS", sans-serif;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,7 +155,7 @@ nav ul {
 .about-info h4 {
   padding: 3rem;
   font-weight: 150;
-  color: #121c27;
+  color: rgb(170, 168, 168);
 }
 
 .about-info img {
@@ -200,20 +201,21 @@ nav ul {
 }
 
 .about-head {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 5;
   justify-content: left;
   text-align: center;
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
-  background: rgb(1, 134, 152);
-  color: white;
-  opacity: 0.6;
+  background: rgb(2, 68, 74);
+  color: rgb(170, 168, 168);
+  opacity: 1;
 }
 /* Featured Books and Books Section */
 
 .shop-back {
-  background: rgb(216, 188, 152);
+  background: rgb(2, 68, 74);
   display: flex;
   flex-direction: column;
   background-repeat: repeat-y;
@@ -225,9 +227,9 @@ nav ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: rgb(1, 134, 152);
+  background: rgb(2, 68, 74);
   color: white;
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .account-links {

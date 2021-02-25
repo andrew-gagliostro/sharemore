@@ -11,11 +11,11 @@ const Home = () => {
     return (
         <>
             <HomeHead></HomeHead>
-            <section className="featured">
-                <header className="about-head">
-                    About ShareMore
-                </header>
-            </section>
+            
+            <h3 className="about-head">
+                About ShareMore
+            </h3>
+            
             <section className="about-info">
                 <h4>
                     ShareMore is the only mission-based online marketplace working to connect public figures 

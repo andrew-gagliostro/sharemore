@@ -11,53 +11,6 @@ import AccountLinks from './AccountLinks';
 const HomeHead = () => {
 
     
-    /*
-    let [redir, setredir] = useState({path:"/sisu", show:"Sign In/Sign Up"})
-    
-    let [user, setUser] = useState(null)
-    const button = <Link/>;
-  
-    useEffect(() => {
-        let updateUser = async () => {
-        try {
-            let user = await Auth.currentAuthenticatedUser()
-            setUser(user)
-            setredir({path:"/shop", show:"Sign Out"})
-            button = <Link to="/admin"> My Account </Link>
-        } catch {
-            setUser(null)
-        }
-        }
-        Hub.listen('auth', updateUser); // listen for login/signup events
-
-    // we are not using async to wait for updateUser, so there will be a flash of page where the user is assumed not to be logged in. If we use a flag 
-        updateUser(); // check manually the first time because we won't get a Hub event // cleanup
-    }, []);
-    */
-
-
-    /*
-
-    useEffect(() => {
-    let updateUser = async authState => {
-      try {
-        let user = await Auth.currentAuthenticatedUser()
-        setUser(user)
-      } catch {
-        setUser(null)
-      }
-      if(user!=null){
-        setredir({path:"/signout", show:"Sign out"});
-      }
-    }
-    Hub.listen('auth', updateUser) // listen for login/signup events
-    updateUser() // check manually the first time because we won't get a Hub event
-    return () => Hub.remove('auth', updateUser) // cleanup
-  }, [redir, user]);
-
-    */
-
-
 
     return (
         <section className="home-head">
