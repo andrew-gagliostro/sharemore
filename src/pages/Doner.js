@@ -1,5 +1,6 @@
 import React from "react";
 import HomeHead from "../components/HomeHead";
+import '../index.css';
 
 const Doner = () => {
     return (
