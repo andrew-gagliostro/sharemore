@@ -74,7 +74,7 @@ a {
 }
 
 .home-head {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
     url(./assets/tim-mossholder-bo3SHP58C3g-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
