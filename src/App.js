@@ -1,4 +1,3 @@
-/*
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Amplify
@@ -25,29 +24,27 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/shop">
-          <Shop />
-        </Route>
-        <Route exact path="/sisu">
-          <SiSu />
-        </Route>
-        <Route exact path="/admin">
-          <Admin />
-        </Route>
-        <Route exact path="/doner">
-          <Doner />
-        </Route>
-        <Route
-          path="/items/:id"
-          children={<ItemDetails></ItemDetails>}>
-        </Route>
+        <Route exact path="/" component={Home}/>
+        
+        
+        <Route exact path="/shop" component={Shop} />
+          
+        
+        <Route exact path="/sisu" component={SiSu}/>
+
+        
+        <Route exact path="/admin" component={Admin}/>
+
+        
+        <Route exact path="/doner" component={Doner}/>
+
+        
+        <Route path="/items/:id" children={<ItemDetails></ItemDetails>} />
+        
+        
       </Switch>
     </Router>
   );
 }
 
 export default App;
-*/
