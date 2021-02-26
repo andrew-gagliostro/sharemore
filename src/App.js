@@ -15,6 +15,7 @@ import awsExports from "./aws-exports";
 import SiSu from "./pages/SiSu";
 import Admin from "./pages/Admin";
 import ItemDetails from "./pages/ItemDetails";
+import Doner from "./pages/Doner";
 
 Amplify.configure(awsExports);
 
@@ -34,6 +35,9 @@ const App = () => {
         </Route>
         <Route exact path="/admin">
           <Admin />
+        </Route>
+        <Route exact path="/doner">
+          <Doner />
         </Route>
         <Route
           path="/items/:id"

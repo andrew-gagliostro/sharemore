@@ -25,6 +25,9 @@ const HomeHead = () => {
                     <li>
                         <Link to="/shop">Shop ShareMore</Link>
                     </li>
+                    <li>
+                        <Link to="/doner">Doner/Partner Info</Link>
+                    </li>
                 </ul>
                 <AccountLinks></AccountLinks>
                 </div>

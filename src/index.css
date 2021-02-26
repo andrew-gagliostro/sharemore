@@ -87,8 +87,8 @@ a {
 }
 
 .homepics {
-  max-width: 40vw;
-  max-height: 50vh;
+  max-width: 20vw;
+  max-height: 25vh;
 }
 
 nav {
@@ -138,7 +138,7 @@ nav ul {
 /*about info section */
 .about-info {
   color: white;
-  background: rgb(2, 68, 74);
+  background-image: linear-gradient(rgb(2, 79, 86), rgb(0, 48, 53));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -160,6 +160,42 @@ nav ul {
 
 .about-info img {
   padding: 2 rem;
+}
+
+/* Doner Section */
+.doner-info {
+  color: white;
+  background-image: linear-gradient(rgb(2, 79, 86), rgb(0, 48, 53));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: hue;
+  min-height: 50vh;
+  font-family: "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.doner-head {
+  font-size: 3.5rem;
+  font-weight: 5;
+  justify-content: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Trebuchet MS", sans-serif;
+  background: rgb(2, 79, 86);
+  color: rgb(170, 168, 168);
+  opacity: 1;
+}
+
+.doner-info h4 {
+  padding: 5rem;
+  font-weight: 150;
+  color: rgb(170, 168, 168);
 }
 
 /* Hero Section */
@@ -208,18 +244,18 @@ nav ul {
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
-  background: rgb(2, 68, 74);
+  background: rgb(2, 79, 86);
   color: rgb(170, 168, 168);
   opacity: 1;
 }
 /* Featured Books and Books Section */
 
 .shop-back {
-  background: rgb(2, 68, 74);
+  background-image: linear-gradient(rgb(2, 79, 86), rgb(0, 31, 35));
   display: flex;
-  flex-direction: column;
-  background-repeat: repeat-y;
+  flex-direction: row;
   background-size: cover;
+  min-height: 80vh;
 }
 
 .shop-head {
@@ -227,7 +263,7 @@ nav ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: rgb(2, 68, 74);
+  background: rgb(2, 79, 86);
   color: white;
   opacity: 1;
 }
@@ -328,6 +364,7 @@ nav ul {
   width: 48rem;
   height: 32rem;
   margin: 4rem 5rem;
+  padding-bottom: 5rem;
   border-top: 1px solid #efefef;
   background: floralwhite;
 }
@@ -337,7 +374,7 @@ nav ul {
 }
 
 .featured-item {
-  margin: 4rem 0;
+  margin: 8rem 5rem;
 }
 
 .item-image {

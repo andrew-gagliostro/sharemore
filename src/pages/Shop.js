@@ -19,7 +19,7 @@ const Shop = () => {
         <HomeHead/>
         <section className="shop-head">
             <h3>
-                Happy Shopping!
+                Shop ShareMore
             </h3>
         </section>
         <section className="shop-back">
