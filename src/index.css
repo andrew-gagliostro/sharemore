@@ -86,6 +86,12 @@ a {
   font-weight: 200;
 }
 
+#home-head-nav {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
 .homepics {
   max-width: 20vw;
   max-height: 25vh;
@@ -111,8 +117,9 @@ nav ul {
 
 #homenav {
   display: flex;
+  flex-direction: column;
   flex: 2 1 70rem;
-  justify-content: space-around;
+  margin-top: 20px;
   align-items: center;
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 600;
@@ -124,15 +131,57 @@ nav ul {
   border-left: 1px solid white;
 }
 
+#dropDownMenu {
+  background: transparent;
+  border: transparent;
+  padding-bottom: 2rem;
+  max-height: 2vh;
+  max-width: 3vw;
+  justify-content: left;
+  align-items: center;
+  color: white;
+}
+
+#dropDownMenu div {
+  align-self: left;
+}
+
+#menuContainer {
+  background: rgb(2, 79, 86);
+  max-height: 2vh;
+  max-width: 3vw;
+
+  color: white;
+}
+
+#dropDownItem {
+  background: rgb(2, 79, 86);
+  min-height: 4vh;
+  min-width: 7vw;
+  text-align: center;
+  color: white;
+  list-style: none;
+  font-size: 1.25rem;
+}
+#account-links {
+  list-style: none;
+}
+
 #logo {
   color: white;
   flex: 2 1 30rem;
+  min-width: 80vw;
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 500;
 }
 
 #logo li {
   font-size: 2 rem;
+}
+
+.dropdownmenu {
+  max-width: 20vw;
+  max-height: 10vh;
 }
 
 /*about info section */

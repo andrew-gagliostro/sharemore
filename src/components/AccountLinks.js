@@ -32,16 +32,16 @@ const AccountLinks = () => {
 
     if(user !== null){
         return(
-            <ul>
-            <li><Link to="/shop"> My Account </Link></li>
-            <li><AmplifySignOut></AmplifySignOut></li>
+            <ul >
+            <div ><Link to="/shop"> My Account </Link></div>
+            <div ><AmplifySignOut></AmplifySignOut></div>
             </ul>
         )
     }
     else{
         return(
             <ul>
-                <li><Link to="/sisu"> Sign In/Sign Up</Link></li>
+                <div><Link to="/sisu"> Sign In/Sign Up</Link></div>
             </ul>
         )
     }
