@@ -133,10 +133,10 @@ nav ul {
 
 #dropDownMenu {
   background: transparent;
+  font-size: 2rem;
   border: transparent;
   padding-bottom: 2rem;
-  max-height: 2vh;
-  max-width: 3vw;
+  max-width: 30vw;
   justify-content: left;
   align-items: center;
   color: white;
@@ -155,22 +155,28 @@ nav ul {
 }
 
 #dropDownItem {
-  background: rgb(2, 79, 86);
+  background: transparent;
   min-height: 4vh;
   min-width: 7vw;
   text-align: center;
   color: white;
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
 }
+
+#dropDownItem:hover {
+  background-color: rgb(2, 79, 86);
+}
+
 #account-links {
   list-style: none;
 }
 
 #logo {
-  color: white;
-  flex: 2 1 30rem;
-  min-width: 80vw;
+  display: flex;
+  width: 70vw;
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 500;
 }
