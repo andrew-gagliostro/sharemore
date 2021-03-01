@@ -75,13 +75,30 @@ a {
 
 .home-head {
   background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
-    url(./assets/tim-mossholder-bo3SHP58C3g-unsplash.jpg);
+    url(./assets/back-head.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position-y: -50px;
   display: flex;
   flex-direction: column;
+  min-height: 90vh;
 }
+
+.other-head {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url(./assets/back-head.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+#homeheight {
+  min-height: 90vh;
+}
+
 .home-head h3 {
   font-weight: 200;
 }
@@ -257,7 +274,7 @@ nav ul {
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
-    url(./assets/tim-mossholder-bo3SHP58C3g-unsplash.jpg);
+    url(./assets/back-head.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

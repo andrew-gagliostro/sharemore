@@ -1,11 +1,11 @@
 import React from "react";
-import HomeHead from "../components/HomeHead";
+import OtherHead from "../components/OtherHead";
 import '../index.css';
 
 const Doner = () => {
     return (
         <>
-            <HomeHead></HomeHead>
+            <OtherHead></OtherHead>
             
             <h3 className="doner-head">
                 Doner / Partner Information
