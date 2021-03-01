@@ -6,6 +6,7 @@ import FirstPic from "../assets/jakob-owens-olHGGd_zYtE-unsplash.jpg";
 import SecondPic from "../assets/nina-strehl-Ds0ZIA5gzc4-unsplash.jpg";
 import ThirdPic from "../assets/anthony-delanoix-hzgs56Ze49s-unsplash.jpg";
 import LastPic from "../assets/joel-muniz-A4Ax1ApccfA-unsplash.jpg";
+import Footer from "../components/Footer";
 
 const Home = () => {
     return (
@@ -48,6 +49,7 @@ const Home = () => {
 
                 
             </section>
+            <Footer></Footer>
         </>
     )
 }

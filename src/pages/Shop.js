@@ -30,10 +30,12 @@ const Shop = () => {
                     <div className="item-image">
                         <img src={image} alt={itemName} />
                     </div>
+                    <div className = "shop-info">
                     <h4> {itemSeller}</h4>
                     <div>{itemName}</div>
                     <div> Current Price: ${curPrice} USD </div>
                     <div> Bidding Ends: {endDate}</div>
+                    </div>
                     <Link to={`items/${id}`} className="btn item-link">details</Link>
                 </article>
             ))}
