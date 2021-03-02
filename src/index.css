@@ -232,7 +232,7 @@ nav ul {
 #footer {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-height: 30vh;
@@ -242,18 +242,18 @@ nav ul {
   border-bottom: 4px solid black;
 }
 
-#footer section {
+#footer-section {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: space-between;
   align-items: left;
   text-align: center;
-  width: 35vw;
   display: flex;
   flex-wrap: wrap;
 }
 
-#footer div {
+#footer-div {
+  justify-content: space-between;
   font-size: 0.8vw;
   margin-right: 2vw;
   font-family: Georgia, "Times New Roman", Times, serif;

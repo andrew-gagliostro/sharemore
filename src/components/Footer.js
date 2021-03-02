@@ -5,20 +5,21 @@ const Footer = () => {
     
 
     return (
-        <section id="footer">
-            <section>
+        <div id="footer">
+            <section id="footer-section">
             <h2> ShareMore </h2>
             </section>
-            <section>
-            <div>| Thank you for visiting ShareMore! |</div><br/>
-            <div>| Impact |</div><br/>
-            <div>| Contact: argagliostro@gmail.com |</div><br/>
-            <div>| Get Involved |</div><br/>
+            <section id="footer-section">
+            <div id="footer-div">| Thank you for visiting ShareMore! |</div><br/>
+            <div id="footer-div">| Impact |</div><br/>
+            <div id="footer-div">| Contact: argagliostro@gmail.com |</div><br/>
+            <div id="footer-div">| Get Involved |</div><br/>
             </section>
-            <section>
+            <section id="footer-section">
                <h4><span>&#169;</span>ShareMore, 2020 </h4>
             </section>
-        </section>
+        </div>
+
     )
 }
 
