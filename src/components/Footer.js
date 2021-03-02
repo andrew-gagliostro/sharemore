@@ -1,5 +1,4 @@
 import React from "react";
-import OtherHead from "../components/OtherHead";
 import '../index.css';
 
 const Footer = () => {

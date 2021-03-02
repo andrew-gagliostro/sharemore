@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
-import OtherHead from "../components/OtherHead";
+import HomeHead from "../components/HomeHead";
 import '../index.css';
 
 import { ItemContext } from "../context/items";
@@ -17,7 +17,7 @@ const Shop = () => {
 
     return (
         <>
-        <OtherHead/>
+        <HomeHead/>
         <section className="shop-head">
             <h3>
                 Shop ShareMore

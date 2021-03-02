@@ -74,7 +74,7 @@ a {
 }
 
 .home-head {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
     url(./assets/back-head.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,17 +83,6 @@ a {
   flex-direction: column;
   min-height: 60vh;
   max-height: 80vh;
-}
-
-.other-head {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
-    url(./assets/back-head.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: -50px;
-  display: flex;
-  flex-direction: column;
-  min-height: 70vh;
 }
 
 #homeheight {
@@ -259,23 +248,19 @@ nav ul {
   justify-content: left;
   align-items: left;
   text-align: center;
-  width: 50%;
+  width: 35vw;
   display: flex;
   flex-wrap: wrap;
 }
 
 #footer div {
-  font-size: 1.5rem;
-  margin-right: 2rem;
+  font-size: 0.8vw;
+  margin-right: 2vw;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #footer div:hover {
   text-decoration: underline;
-}
-
-#footer #thankyou:hover {
-  text-decoration: transparent;
 }
 
 #footer h4 {
