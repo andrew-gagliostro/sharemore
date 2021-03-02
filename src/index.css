@@ -78,7 +78,7 @@ a {
     url(./assets/back-head.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   flex-direction: column;
   min-height: 60vh;
@@ -265,9 +265,21 @@ nav ul {
 }
 
 #footer div {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#footer div:hover {
+  text-decoration: underline;
+}
+
+#footer #thankyou:hover {
+  text-decoration: transparent;
+}
+
+#footer h4 {
+  color: rgb(165, 165, 165);
 }
 
 /* Doner Section */

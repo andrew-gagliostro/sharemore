@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <section id="footer">
             <section>
-            <h2>| ShareMore |</h2>
+            <h2> ShareMore </h2>
             </section>
             <section>
             <div>| Thank you for visiting ShareMore! |</div><br/>
@@ -17,7 +17,7 @@ const Footer = () => {
             <div>| Get Involved |</div><br/>
             </section>
             <section>
-               <div> <span>&#169;</span>ShareMore, 2020 </div>
+               <h4><span>&#169;</span>ShareMore, 2020 </h4>
             </section>
         </section>
     )
