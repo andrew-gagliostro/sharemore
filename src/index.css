@@ -78,6 +78,7 @@ a {
     url(./assets/back-head.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   min-height: 90vh;
