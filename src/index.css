@@ -81,7 +81,8 @@ a {
   background-position: center;
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 60vh;
+  max-height: 80vh;
 }
 
 .other-head {
