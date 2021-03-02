@@ -186,7 +186,7 @@ nav ul {
 }
 
 #dropDownItem:hover {
-  background-color: rgb(2, 79, 86);
+  background-color: rgb(28, 44, 111);
 }
 
 #account-links {
@@ -195,6 +195,7 @@ nav ul {
 
 #logo {
   display: flex;
+  color: rgb(93, 92, 92);
   width: 70vw;
   font-family: "Trebuchet MS", sans-serif;
   font-weight: 500;
@@ -212,7 +213,7 @@ nav ul {
 /*about info section */
 .about-info {
   color: white;
-  background-image: linear-gradient(rgb(2, 79, 86), rgb(0, 48, 53));
+  background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -270,7 +271,7 @@ nav ul {
 /* Doner Section */
 .doner-info {
   color: white;
-  background-image: linear-gradient(rgb(2, 79, 86), rgb(0, 48, 53));
+  background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -292,7 +293,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
-  background: rgb(2, 79, 86);
+  background: rgb(28, 44, 111);
   color: rgb(170, 168, 168);
   opacity: 1;
 }
@@ -349,7 +350,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
-  background: rgb(2, 79, 86);
+  background: rgb(28, 44, 111);
   color: rgb(170, 168, 168);
   opacity: 1;
 }
@@ -361,7 +362,7 @@ nav ul {
 }
 
 .shop-back {
-  background-image: linear-gradient(rgb(2, 79, 86), rgb(0, 31, 35));
+  background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
   display: flex;
   flex-direction: row;
   background-size: cover;
@@ -373,7 +374,7 @@ nav ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: rgb(2, 79, 86);
+  background: rgb(28, 44, 111);
   color: white;
   opacity: 1;
 }
