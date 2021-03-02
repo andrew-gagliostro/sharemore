@@ -77,8 +77,7 @@ a {
   background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
     url(./assets/back-head.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: -50px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 90vh;
@@ -248,7 +247,8 @@ nav ul {
   max-height: 30vh;
   min-height: 20vh;
   background-color: white;
-  border-top: 3px solid black;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 
 #footer section {
@@ -352,6 +352,7 @@ nav ul {
   font-family: "Trebuchet MS", sans-serif;
   background: rgb(28, 44, 111);
   color: rgb(170, 168, 168);
+  border-top: 2px solid black;
   opacity: 1;
 }
 /* Featured Books and Books Section */
