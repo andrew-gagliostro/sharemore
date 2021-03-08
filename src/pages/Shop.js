@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import HomeHead from "../components/HomeHead";
-import '../index.css';
+
 
 import { ItemContext } from "../context/items";
 

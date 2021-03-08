@@ -140,6 +140,20 @@ nav ul {
 
 /*DropDown STuff */
 
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 2.5rem;
+  height: 0.35rem;
+  background-color: rgb(228, 227, 227);
+  margin: 0.5rem 0;
+}
+
 #dropDownMenu {
   background: transparent;
   font-size: 2rem;
@@ -176,7 +190,8 @@ nav ul {
 }
 
 #dropDownItem:hover {
-  background-color: rgb(28, 44, 111);
+  background-color: rgb(46, 56, 96);
+  background-blend-mode: hue;
 }
 
 #account-links {

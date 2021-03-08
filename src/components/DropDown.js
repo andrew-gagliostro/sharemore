@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 import { Dropdown } from 'react-bootstrap';
 import AccountLinks from './AccountLinks';
-
+import { useHistory } from "react-router-dom";
 
 //inside of return
 
@@ -66,19 +66,35 @@ const DropDown = () => {
         </div>
         */
 
-    
-
-    
-    
-
-    return (
-        
-        <Dropdown id="dropdownMenu">
+        /*
+                <Dropdown id="dropdownMenu">
         <Dropdown.Toggle id="dropDownMenu"><div>Menu</div></Dropdown.Toggle>
         <Dropdown.Menu id="homenav" >
             <Dropdown.Item href="#" id="dropDownItem"><Link to="/">Home</Link></Dropdown.Item>
             <Dropdown.Item href="#" id="dropDownItem"><Link to="/shop">Shop ShareMore</Link></Dropdown.Item>
             <Dropdown.Item href="#" id="dropDownItem"><Link to="/doner">Doner/Partner Info</Link></Dropdown.Item>
+            <Dropdown.Item href="#" id="dropDownItem"><AccountLinks></AccountLinks></Dropdown.Item>
+        </Dropdown.Menu>
+        </Dropdown>
+        */
+
+    const history = useHistory();
+
+
+    return (
+        
+        <Dropdown id="dropdownMenu">
+        <Dropdown.Toggle id="dropDownMenu">
+        <div class="container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        </Dropdown.Toggle>
+        <Dropdown.Menu id="homenav" >
+            <Dropdown.Item href="#" id="dropDownItem" onClick={() => { history.push('/') }}>Home</Dropdown.Item>
+            <Dropdown.Item href="#" id="dropDownItem" onClick={() => { history.push('/shop') }}><Link to="/shop">Shop ShareMore</Link></Dropdown.Item>
+            <Dropdown.Item href="#" id="dropDownItem" onClick={() => { history.push('/doner') }}><Link to="/doner">Doner/Partner Info</Link></Dropdown.Item>
             <Dropdown.Item href="#" id="dropDownItem"><AccountLinks></AccountLinks></Dropdown.Item>
         </Dropdown.Menu>
         </Dropdown>
