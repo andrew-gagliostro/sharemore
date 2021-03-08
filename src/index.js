@@ -8,7 +8,6 @@ import { ItemProvider } from "./context/items";
 ReactDOM.render(
   
   <ItemProvider>
-    <link type="text/css" rel="stylesheet" href="./index.css"></link>
   <React.StrictMode>
     <App />
   </React.StrictMode>

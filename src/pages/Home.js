@@ -59,9 +59,10 @@ const Home = () => {
                 
 
                 <h4>
-                    
+                    <div>
                     Everyone: donating is just one of the endless ways to help the world around us. 
                     Be Kind, Spread Love, and Share More.
+                    </div>
 
                 </h4>
 
