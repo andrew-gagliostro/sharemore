@@ -18,11 +18,11 @@ const Shop = () => {
     return (
         <>
         <HomeHead/>
-        <section className="shop-head">
-            <h3>
+        
+            <h3 className="about-head">
                 Shop ShareMore
             </h3>
-        </section>
+        
         <section className="shop-back">
         <div className="items featured-list">
             {featured.map(({ id, image, itemSeller, itemName, curPrice, endDate}) => (

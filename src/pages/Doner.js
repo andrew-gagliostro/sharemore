@@ -6,7 +6,7 @@ const Doner = () => {
         <>
             <HomeHead></HomeHead>
             
-            <h3 className="doner-head">
+            <h3 className="about-head">
                 Doner / Partner Information
             </h3>
             

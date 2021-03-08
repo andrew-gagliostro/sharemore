@@ -142,7 +142,6 @@ nav ul {
 
 .container {
   display: inline-block;
-  cursor: pointer;
 }
 
 .bar1,
@@ -191,7 +190,6 @@ nav ul {
 
 #dropDownItem:hover {
   background-color: rgb(46, 56, 96);
-  background-blend-mode: hue;
 }
 
 #account-links {
@@ -233,13 +231,20 @@ nav ul {
 }
 
 .about-info h4 {
-  padding: 3rem;
+  padding: 5rem;
   font-weight: 150;
   color: rgb(170, 168, 168);
+  display: flex;
+  align-items: center;
+}
+
+.about-info div {
+  max-width: 60vh;
+  margin-right: 3rem;
 }
 
 .about-info img {
-  padding: 2 rem;
+  box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
 }
 
 /*Footer STuff */
@@ -299,19 +304,6 @@ nav ul {
   text-align: center;
 }
 
-.doner-head {
-  font-size: 3.5rem;
-  font-weight: 5;
-  justify-content: left;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  font-family: "Trebuchet MS", sans-serif;
-  background: rgb(28, 44, 111);
-  color: rgb(170, 168, 168);
-  opacity: 1;
-}
-
 .doner-info h4 {
   padding: 5rem;
   font-weight: 150;
@@ -364,7 +356,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
-  background: rgb(28, 44, 111);
+  background: rgb(23, 37, 93);
   color: rgb(170, 168, 168);
   border-top: 2px solid black;
   opacity: 1;
@@ -382,16 +374,6 @@ nav ul {
   flex-direction: row;
   background-size: cover;
   min-height: 80vh;
-}
-
-.shop-head {
-  justify-content: center;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background: rgb(28, 44, 111);
-  color: white;
-  opacity: 1;
 }
 
 .account-links {
