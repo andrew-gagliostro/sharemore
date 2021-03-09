@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import HomeHead from "../components/HomeHead";
-
+import '../index.css';
 
 import { ItemContext } from "../context/items";
 
@@ -18,11 +18,11 @@ const Shop = () => {
     return (
         <>
         <HomeHead/>
-        
-            <h3 className="about-head">
+        <section className="shop-head">
+            <h3>
                 Shop ShareMore
             </h3>
-        
+        </section>
         <section className="shop-back">
         <div className="items featured-list">
             {featured.map(({ id, image, itemSeller, itemName, curPrice, endDate}) => (

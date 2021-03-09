@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { ItemProvider } from "./context/items";
 
 ReactDOM.render(
-  
   <ItemProvider>
   <React.StrictMode>
     <App />

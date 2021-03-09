@@ -140,17 +140,6 @@ nav ul {
 
 /*DropDown STuff */
 
-.container {
-  display: inline-block;
-}
-
-.bar {
-  width: 2.5rem;
-  height: 0.35rem;
-  background-color: rgb(228, 227, 227);
-  margin: 0.5rem 0;
-}
-
 #dropDownMenu {
   background: transparent;
   font-size: 2rem;
@@ -187,7 +176,7 @@ nav ul {
 }
 
 #dropDownItem:hover {
-  background-color: rgb(46, 56, 96);
+  background-color: rgb(28, 44, 111);
 }
 
 #account-links {
@@ -229,20 +218,13 @@ nav ul {
 }
 
 .about-info h4 {
-  padding: 5rem;
+  padding: 3rem;
   font-weight: 150;
   color: rgb(170, 168, 168);
-  display: flex;
-  align-items: center;
-}
-
-.about-info div {
-  max-width: 60vh;
-  margin-right: 3rem;
 }
 
 .about-info img {
-  box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
+  padding: 2 rem;
 }
 
 /*Footer STuff */
@@ -302,6 +284,19 @@ nav ul {
   text-align: center;
 }
 
+.doner-head {
+  font-size: 3.5rem;
+  font-weight: 5;
+  justify-content: left;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Trebuchet MS", sans-serif;
+  background: rgb(28, 44, 111);
+  color: rgb(170, 168, 168);
+  opacity: 1;
+}
+
 .doner-info h4 {
   padding: 5rem;
   font-weight: 150;
@@ -354,7 +349,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
-  background: rgb(23, 37, 93);
+  background: rgb(28, 44, 111);
   color: rgb(170, 168, 168);
   border-top: 2px solid black;
   opacity: 1;
@@ -372,6 +367,16 @@ nav ul {
   flex-direction: row;
   background-size: cover;
   min-height: 80vh;
+}
+
+.shop-head {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: rgb(28, 44, 111);
+  color: white;
+  opacity: 1;
 }
 
 .account-links {

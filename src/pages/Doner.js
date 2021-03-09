@@ -1,12 +1,13 @@
 import React from "react";
 import HomeHead from "../components/HomeHead";
+import '../index.css';
 
 const Doner = () => {
     return (
         <>
             <HomeHead></HomeHead>
             
-            <h3 className="about-head">
+            <h3 className="doner-head">
                 Doner / Partner Information
             </h3>
             
@@ -19,7 +20,7 @@ const Doner = () => {
     
                 <h4>
                 ShareMore is a muilti-vendor marketplace where we ask public figures, you, to donate anything you might have laying around that you think a fan may like to get their hands on! 
-                It’s up to you to choose where the profit goes: keep some if you’d like, and choose a charity or organization for us to donate to on your behalf!
+                It’s up to you to choose where the profit goes: keep some if you’d like, and choose charity or organization for us to donate to on your behalf!
                 </h4>
 
 
@@ -32,7 +33,7 @@ const Doner = () => {
 
                 <h4>
                 Anything you could donate to help us with our mission would be greatly appreciated.
-                I would love to speak further about this: feel free to call @ (+1) 973-830-7793 or email @argagliostro@gmail.com.
+                I would love to speak further about this: feel free to call @(+1) 973-830-7793 or email @argagliostro@gmail.com.
                 </h4>
 
 
