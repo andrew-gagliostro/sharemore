@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import { AmplifyAuthenticator, AmplifySignOut, AmplifySignIn } from '@aws-amplify/ui-react';
-import Amplify, {Auth} from 'aws-amplify';
+import {AmplifySignOut} from '@aws-amplify/ui-react';
+import {Auth} from 'aws-amplify';
 import { Hub } from 'aws-amplify';
 
 
@@ -9,8 +9,7 @@ import { Hub } from 'aws-amplify';
 
 const AccountLinks = () => {
 
-    
-    let [redir, setredir] = useState({path:"/sisu", show:"Sign In/Sign Up"})
+
     
     let [user, setUser] = useState(null);
   
@@ -19,7 +18,6 @@ const AccountLinks = () => {
         try {
             let user = await Auth.currentAuthenticatedUser()
             setUser(user)
-            setredir({path:"/shop", show:"Sign Out"})
         } catch {
             setUser(null)
         }

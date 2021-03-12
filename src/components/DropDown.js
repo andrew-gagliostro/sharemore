@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 
 
 import { Link } from 'react-router-dom';
@@ -18,10 +17,10 @@ const DropDown = () => {
         
         <Dropdown>
         <Dropdown.Toggle id="dropDownMenu">
-        <div class="container">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div className="container">
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
         </div>
         </Dropdown.Toggle>
         <Dropdown.Menu id="homenav" >

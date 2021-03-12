@@ -20,12 +20,13 @@ const ItemDetails = () => {
 
   return (
     <section className="item-details">
-        <img className="detail-image" src={url}/>
+        <img alt="" className="detail-image" src={url}/>
       
       <div className="detail-description">
         <h2>{itemName}</h2>
         <p>{description}</p>
         <h3>{itemSeller}</h3>
+        <p>{endDate}</p>
         <h4>Current Price - $ {curPrice}</h4>
         <button
           className="btn"

@@ -1,6 +1,4 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Header from "../components/Header";
 import HomeHead from "../components/HomeHead";
 import FirstPic from "../assets/jakob-owens-olHGGd_zYtE-unsplash.jpg";
 import SecondPic from "../assets/nina-strehl-Ds0ZIA5gzc4-unsplash.jpg";
@@ -24,7 +22,7 @@ const Home = () => {
                     with their fans
                     </div>
 
-                <img className = "homepics"src={FirstPic}></img>
+                <img alt ="" className = "homepics"src={FirstPic}></img>
                 </h4>
 
 
@@ -33,7 +31,7 @@ const Home = () => {
                     Our goal is to monitize the fandom industry: allowing true fans to get the merchandise 
                     they want while distributing profits to worthy causes that buyers and sellers may choose!
                     </div>
-                    <img className = "homepics"src={SecondPic}></img>
+                    <img alt="" className = "homepics"src={SecondPic}></img>
 
                 </h4>
 
@@ -44,7 +42,7 @@ const Home = () => {
                     Public figures: choose your cause and list anything: 
                     from an autographed ball to a pair of shoes in the back of your closet
                     </div>
-                <img className="homepics"src={ThirdPic}></img>
+                <img alt="" className="homepics"src={ThirdPic}></img>
 
                 </h4>
 
@@ -52,7 +50,7 @@ const Home = () => {
                     <div>
                         Fans: find something that strikes a chord and buy now or place a bid!
                     </div>
-                <img className="homepics"src={LastPic}></img>
+                <img alt="" className="homepics"src={LastPic}></img>
 
                 </h4>
 
