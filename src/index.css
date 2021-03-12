@@ -139,6 +139,16 @@ nav ul {
 }
 
 /*DropDown STuff */
+.container {
+  display: inline-block;
+}
+
+.bar {
+  width: 2.5rem;
+  height: 0.35rem;
+  background-color: rgb(228, 227, 227);
+  margin: 0.5rem 0;
+}
 
 #dropDownMenu {
   background: transparent;
