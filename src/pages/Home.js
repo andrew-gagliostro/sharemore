@@ -19,32 +19,51 @@ const Home = () => {
             
             <section className="about-info">
                 <h4>
+                    <div>
                     ShareMore is the only mission-based online marketplace working to connect public figures 
                     with their fans
-                </h4>
+                    </div>
 
                 <img className = "homepics"src={FirstPic}></img>
-
-                <h4>
-                    Our goal is to monitize the fandom industry: allowing true fans to get the merchandise 
-                    they want while distributing profits to worthy causes that buyers and sellers may choose!
                 </h4>
 
-                <img className = "homepics"src={SecondPic}></img>
 
+                <h4>
+                    <div>
+                    Our goal is to monitize the fandom industry: allowing true fans to get the merchandise 
+                    they want while distributing profits to worthy causes that buyers and sellers may choose!
+                    </div>
+                    <img className = "homepics"src={SecondPic}></img>
 
+                </h4>
 
-                <h4>Public figures: choose your cause and list anything: 
-                    from an autographed ball to a pair of shoes in the back of your closet</h4>
+                
 
+                <h4>
+                    <div>
+                    Public figures: choose your cause and list anything: 
+                    from an autographed ball to a pair of shoes in the back of your closet
+                    </div>
                 <img className="homepics"src={ThirdPic}></img>
 
-                <h4>Fans: find something that strikes a chord and buy now or place a bid!</h4>
+                </h4>
 
+                <h4>
+                    <div>
+                        Fans: find something that strikes a chord and buy now or place a bid!
+                    </div>
                 <img className="homepics"src={LastPic}></img>
 
-                <h4>Everyone: donating is just one of the endless ways to help the world around us. 
+                </h4>
+
+                
+
+                <h4>
+                    <div>
+                    Everyone: donating is just one of the endless ways to help the world around us. 
                     Be Kind, Spread Love, and Share More.
+                    </div>
+
                 </h4>
 
                 

@@ -228,13 +228,20 @@ nav ul {
 }
 
 .about-info h4 {
-  padding: 3rem;
+  padding: 5rem;
   font-weight: 150;
   color: rgb(170, 168, 168);
+  display: flex;
+  align-items: center;
+}
+
+.about-info div {
+  max-width: 60vh;
+  margin-right: 3rem;
 }
 
 .about-info img {
-  padding: 2 rem;
+  box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
 }
 
 /*Footer STuff */
