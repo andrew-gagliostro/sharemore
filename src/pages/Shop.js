@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import HomeHead from "../components/HomeHead";
 import '../index.css';
+import Footer from "../components/Footer";
 
 import { ItemContext } from "../context/items";
 
@@ -40,6 +41,7 @@ const Shop = () => {
             ))}
         </div>
         </section>
+        <Footer></Footer>
         </>
     )
 }

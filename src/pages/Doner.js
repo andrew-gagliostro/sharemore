@@ -1,6 +1,7 @@
 import React from "react";
 import HomeHead from "../components/HomeHead";
 import '../index.css';
+import Footer from "../components/Footer";
 
 const Doner = () => {
     return (
@@ -43,6 +44,7 @@ const Doner = () => {
 
                 
             </section>
+            <Footer></Footer>
         </>
     )
 }
