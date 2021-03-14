@@ -260,9 +260,10 @@ nav ul {
 }
 
 #footer-left {
-  max-width: 32vw;
+  width: 22vw;
+  font-size: 4vw;
   font-family: "Signika", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -270,6 +271,7 @@ nav ul {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 #footer-center {
   max-width: 32vw;
@@ -277,11 +279,12 @@ nav ul {
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 2rem;
 }
 #footer-right {
   max-width: 32vw;
@@ -299,7 +302,7 @@ nav ul {
 
 #footer-div {
   justify-content: space-between;
-  font-size: 0.75vw;
+  font-size: 1.2vw;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 

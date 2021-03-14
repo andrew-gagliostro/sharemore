@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div id="footer">
             <section id="footer-left">
-            <h2> ShareMore </h2>
+            ShareMore
             </section>
             <section id="footer-center">
             <div id="footer-div">| Thank you for visiting ShareMore! |</div><br/>
