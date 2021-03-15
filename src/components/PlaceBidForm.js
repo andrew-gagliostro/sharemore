@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState, useContext } from "react";
+import { useHistory , useParams} from "react-router-dom";
 import { ItemContext } from "../context/items";
 
 
@@ -12,6 +12,18 @@ const PlaceBidForm = () => {
   const { placeBid } = useContext(ItemContext);
   const [BidDetails, setBidDetails] = useState({ item_id: id, bid_price: "", address: "", confirmed:false});
   const history = useHistory();
+
+  const { items } = useContext(ItemContext);
+    
+
+    const item = items.find((item) => {
+        return item.id === BidDetails.item_id;
+    });
+    if (!item) {
+        return <h3>Loading...</h3>;
+    }
+
+    const url = item.img;
 
 
 
@@ -26,6 +38,27 @@ const PlaceBidForm = () => {
   };
 
   return (
+
+    <>
+    <section className="item-details">
+        <img alt="" className="detail-image" src={url}/>
+      
+      <div className="detail-description">
+        <h2>{item.itemName}</h2>
+        <p>{item.description}</p>
+        <h3>{item.itemSeller}</h3>
+        <p>{item.endDate}</p>
+        <h4>Current Price - $ {item.curPrice}</h4>
+        <button
+          className="btn"
+          onClick={() => {
+            history.push("/shop");
+          }}
+        >
+          Continue Shopping
+        </button>
+      </div>
+    </section>
     <form onSubmit={handleSubmit}>
       <div className="checkout-form">
         <label htmlFor="bid-adress">Confirm Your Email Address</label>
@@ -48,8 +81,8 @@ const PlaceBidForm = () => {
             <p><label>Confirm Your Bid?</label>
                 <input type="checkbox"
                     className="featured-checkbox"
-                    checked={bookDetails.featured}
-                    onChange={() => setBidDetails({ ...BidDetails, confirmed: !bookDetails.featured })}
+                    checked={BidDetails.confirmed}
+                    onChange={() => setBidDetails({ ...BidDetails, confirmed: !BidDetails.featured })}
                 />
             </p>
         </div>  
@@ -58,7 +91,8 @@ const PlaceBidForm = () => {
         Submit Bid
       </button>
     </form>
+    </>
   );
 };
 
-export default CheckoutForm;
+export default PlaceBidForm;

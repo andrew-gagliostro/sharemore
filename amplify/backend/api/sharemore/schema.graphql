@@ -37,6 +37,7 @@ type ItemBid
   bid_price: Float!
   item: Item @connection(fields: ["item_id"])
 }
+
 enum BidStatus {
   SUCCESS
   FAILED
@@ -44,8 +45,7 @@ enum BidStatus {
 
 type Mutation {
   processBid(input: ProcessBidInput!): BidStatus
-    @function(name: "processPayment-${env}")
-    @function(name: "createOrder-${env}")
+    @function(name: "processBid-${env}")
 }
 
 input ProcessBidInput {

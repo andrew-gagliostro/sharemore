@@ -1,7 +1,6 @@
 import React from "react";
 
 
-import { Link } from 'react-router-dom';
 
 import { Dropdown } from 'react-bootstrap';
 import AccountLinks from './AccountLinks';
@@ -25,10 +24,10 @@ const DropDown = () => {
         </div>
         </Dropdown.Toggle>
         <Dropdown.Menu id="homenav" >
-            <Dropdown.Item href="#" id="dropDownItem" onClick={() => { history.push('/') }}>Home</Dropdown.Item>
-            <Dropdown.Item href="#" id="dropDownItem" onClick={() => { history.push('/shop') }}><Link to="/shop">Shop ShareMore</Link></Dropdown.Item>
-            <Dropdown.Item href="#" id="dropDownItem" onClick={() => { history.push('/doner') }}><Link to="/doner">Doner/Partner Info</Link></Dropdown.Item>
-            <Dropdown.Item href="#" id="dropDownItem"><AccountLinks></AccountLinks></Dropdown.Item>
+            <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/') }}>Home</Dropdown.Item>
+            <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/shop') }}>Shop ShareMore</Dropdown.Item>
+            <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/doner') }}>Doner/Partner Info</Dropdown.Item>
+            <Dropdown.Item id="dropDownItem"><AccountLinks></AccountLinks></Dropdown.Item>
         </Dropdown.Menu>
         </Dropdown>
         
@@ -37,6 +36,7 @@ const DropDown = () => {
 }
 
 // TODO: Switch to https://github.com/palmerhq/the-platform#stylesheet when it will be stable
+//
 
 
 export default DropDown

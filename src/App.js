@@ -16,6 +16,7 @@ import SiSu from "./pages/SiSu";
 import Admin from "./pages/Admin";
 import ItemDetails from "./pages/ItemDetails";
 import Doner from "./pages/Doner";
+import PlaceBidForm from "./components/PlaceBidForm";
 
 Amplify.configure(awsExports);
 
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <Router>
       <Switch>
+
         <Route exact path="/" component={Home}/>
         
         
@@ -40,9 +42,9 @@ const App = () => {
 
         
         <Route path="/items/:id" children={<ItemDetails></ItemDetails>} />
-
-        <Route path="/bids/:id" children={<PlaceBid></PlaceBid>} />
         
+
+        <Route path="/bids/:id" children={<PlaceBidForm></PlaceBidForm>} />
         
       </Switch>
     </Router>

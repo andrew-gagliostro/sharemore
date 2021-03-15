@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 import {AmplifySignOut} from '@aws-amplify/ui-react';
 import {Auth} from 'aws-amplify';
 import { Hub } from 'aws-amplify';
+import { Dropdown } from 'react-bootstrap';
+import { useHistory } from "react-router-dom";
 
 
 
 
 const AccountLinks = () => {
+
+    const history = useHistory();
 
 
     
@@ -30,17 +34,17 @@ const AccountLinks = () => {
 
     if(user !== null){
         return(
-            <ul >
-            <div ><Link to="/shop"> My Account </Link></div>
-            <div ><AmplifySignOut></AmplifySignOut></div>
-            </ul>
+            <>
+            <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/shop') }}> Account </Dropdown.Item>
+            <Dropdown.Item id="dropDownItem" > <AmplifySignOut/> </Dropdown.Item>
+            </>
         )
     }
     else{
         return(
-            <ul>
-                <div><Link to="/sisu"> Sign In/Sign Up</Link></div>
-            </ul>
+            <>
+                <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/sisu') }}> Sign In / Sign Up </Dropdown.Item>
+            </>
         )
     }
 

@@ -1,19 +1,60 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getItem = /* GraphQL */ `
-  query GetItem($id: ID!) {
-    getItem(id: $id) {
+export const getItemBid = /* GraphQL */ `
+  query GetItemBid($id: ID!) {
+    getItemBid(id: $id) {
       id
-      itemSeller
-      itemName
-      description
-      image
-      featured
-      curPrice
-      endDate
+      item_id
+      userEmail
+      date
+      bid_price
       createdAt
       updatedAt
+      item {
+        id
+        itemSeller
+        itemName
+        description
+        image
+        featured
+        curPrice
+        endDate
+        createdAt
+        updatedAt
+      }
+    }
+  }
+`;
+export const listItemBids = /* GraphQL */ `
+  query ListItemBids(
+    $filter: ModelItemBidFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listItemBids(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        item_id
+        userEmail
+        date
+        bid_price
+        createdAt
+        updatedAt
+        item {
+          id
+          itemSeller
+          itemName
+          description
+          image
+          featured
+          curPrice
+          endDate
+          createdAt
+          updatedAt
+        }
+      }
+      nextToken
     }
   }
 `;
@@ -37,6 +78,22 @@ export const listItems = /* GraphQL */ `
         updatedAt
       }
       nextToken
+    }
+  }
+`;
+export const getItem = /* GraphQL */ `
+  query GetItem($id: ID!) {
+    getItem(id: $id) {
+      id
+      itemSeller
+      itemName
+      description
+      image
+      featured
+      curPrice
+      endDate
+      createdAt
+      updatedAt
     }
   }
 `;

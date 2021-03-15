@@ -2,8 +2,9 @@ const { v4: uuidv4 } = require("uuid");
 const AWS = require("aws-sdk");
 const documentClient = new AWS.DynamoDB.DocumentClient();
 
-const ITEM_TABLE = "Item-lnleozrryfhm3o4tgwvtwnll4y-smdev";
-const ITEM_TYPE = "Item";
+const ITEMBID_TABLE = "ItemBid-lnleozrryfhm3o4tgwvtwnll4y-smdev";
+const ITEMBID_TYPE = "ItemBid";
+
 
 
 
@@ -27,10 +28,10 @@ const createProcessedBid = async (payload) => {
     const { id, item_id, bid_price, address, confirmed } = payload;
 
     var params = {
-        TableName: BID_TABLE,
+        TableName: ITEMBID_TABLE,
         Item: {
           id: id,
-          __typename: BID_TYPE,
+          __typename: ITEMBID_TYPE,
           item_id = item_id,
           bid_price: bid_price,
           address: address,
@@ -57,4 +58,4 @@ exports.handler = async (event) => {
     } catch (err) {
       throw new Error(err);
     }
-  };
+};

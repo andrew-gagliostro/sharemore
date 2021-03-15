@@ -18,7 +18,7 @@
       "function": {
         "processBid": {
           "deploymentBucketName": "amplify-sharemore-smdev-173247-deployment",
-          "s3Key": "amplify-builds/processBid-584d32414d496c476366-build.zip"
+          "s3Key": "amplify-builds/processBid-6a324554416a7554532f-build.zip"
         }
       }
     }

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { listItems } from "../api/queries";
 import { processBid } from "../api/mutations";
-import { useHistory } from "react-router";
 import { useHistory } from "react-router-dom";
+const { v4: uuidv4 } = require("uuid");
 
 const ItemContext = React.createContext();
 
@@ -55,7 +55,7 @@ const ItemProvider = ({children}) => {
     };
 
     return (
-        <ItemContext.Provider value={{ items, featured, loading}}>
+        <ItemContext.Provider value={{ items, featured, loading, placeBid}}>
           {children}
         </ItemContext.Provider>
       );

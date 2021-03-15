@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { ItemContext } from "../context/items";
+import { Link } from 'react-router-dom';
 
 
 const ItemDetails = () => {
@@ -19,6 +20,9 @@ const ItemDetails = () => {
   const { image: url, itemSeller, itemName, description, endDate, curPrice } = item;
 
   return (
+
+
+    
     <section className="item-details">
         <img alt="" className="detail-image" src={url}/>
       
@@ -36,7 +40,7 @@ const ItemDetails = () => {
         >
           Continue Shopping
         </button>
-        <Link to={`bids/${id}`} className="btn item-link">Place Bid</Link>
+        <Link to={`/bids/${id}`}className="btn item-link">Place Bid</Link>
       </div>
     </section>
   );
