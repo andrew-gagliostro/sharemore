@@ -338,7 +338,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
-  background: rgb(28, 44, 111);
+  background: rgb(23, 37, 93);
   color: rgb(170, 168, 168);
   opacity: 1;
 }
@@ -395,7 +395,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
-  background: rgb(28, 44, 111);
+  background: rgb(23, 37, 93);
   color: rgb(170, 168, 168);
   border-top: 2px solid black;
   opacity: 1;
@@ -420,8 +420,8 @@ nav ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: rgb(28, 44, 111);
-  color: white;
+  background: rgb(23, 37, 93);
+  color: rgb(170, 168, 168);
   opacity: 1;
 }
 
