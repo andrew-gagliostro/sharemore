@@ -11,7 +11,7 @@ const PlaceBid = () => {
             <AmplifyAuthenticator>
                 
                     <section>
-                        <h2>Time to Checkout?</h2>
+                        <h2>Time to Place Bid?</h2>
                         <PlaceBidForm />
                     </section>
                 

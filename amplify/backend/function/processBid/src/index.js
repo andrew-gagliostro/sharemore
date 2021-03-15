@@ -1,7 +1,9 @@
 const { v4: uuidv4 } = require("uuid");
 const AWS = require("aws-sdk");
 const documentClient = new AWS.DynamoDB.DocumentClient();
-
+const { CognitoIdentityServiceProvider } = require("aws-sdk");
+const cognitoIdentityServiceProvider = new CognitoIdentityServiceProvider();
+const USER_POOL_ID = "us-east-1_P7DrWOJBo";
 const ITEMBID_TABLE = "ItemBid-lnleozrryfhm3o4tgwvtwnll4y-smdev";
 const ITEMBID_TYPE = "ItemBid";
 
@@ -53,7 +55,7 @@ const createProcessedBid = async (payload) => {
  */
 exports.handler = async (event) => {
     try {
-      await createProcessedBid(event.payload);
+      await createProcessedBid(event.arguments.input);
       return "SUCCESS";
     } catch (err) {
       throw new Error(err);
