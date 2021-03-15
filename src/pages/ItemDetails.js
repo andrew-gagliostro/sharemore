@@ -36,6 +36,7 @@ const ItemDetails = () => {
         >
           Continue Shopping
         </button>
+        <Link to={`bids/${id}`} className="btn item-link">Place Bid</Link>
       </div>
     </section>
   );

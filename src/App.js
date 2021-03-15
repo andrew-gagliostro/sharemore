@@ -40,6 +40,8 @@ const App = () => {
 
         
         <Route path="/items/:id" children={<ItemDetails></ItemDetails>} />
+
+        <Route path="/bids/:id" children={<PlaceBid></PlaceBid>} />
         
         
       </Switch>

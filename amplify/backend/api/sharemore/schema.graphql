@@ -19,3 +19,41 @@ type Item
   curPrice: Float
   endDate: String!
 }
+
+type ItemBid
+  @model()
+  @key(name: "byUser", fields: ["user"])
+  @auth(
+    rules: [
+      # allow admins to create bookorders for customers by using customer email in lambda
+      { allow: owner, identityClaim: "email", ownerField: "customer" }
+      { allow: groups, groups: ["Admin"] }
+    ]
+  ) {
+  id: ID!
+  item_id: ID!
+  userEmail: String!
+  date: String!
+  bid_price: Float!
+  item: Item @connection(fields: ["item_id"])
+}
+enum BidStatus {
+  SUCCESS
+  FAILED
+}
+
+type Mutation {
+  processBid(input: ProcessBidInput!): BidStatus
+    @function(name: "processPayment-${env}")
+    @function(name: "createOrder-${env}")
+}
+
+input ProcessBidInput {
+  id: ID!
+  item_id: ID!
+  bid_price: Float!
+  address: String
+  confirmed: Boolean!
+}
+
+
