@@ -21,8 +21,8 @@ type Item
 }
 
 type ItemBid
-  @model()
-  @key(name: "byUser", fields: ["user"])
+  @model(subscriptions: null)
+  @key(name: "byUser", fields: ["userEmail"])
   @auth(
     rules: [
       # allow admins to create bookorders for customers by using customer email in lambda
@@ -55,5 +55,3 @@ input ProcessBidInput {
   address: String
   confirmed: Boolean!
 }
-
-
