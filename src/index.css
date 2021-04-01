@@ -400,6 +400,18 @@ nav ul {
   border-top: 2px solid black;
   opacity: 1;
 }
+
+/* Section for bid stuff */
+
+.bid-link {
+  color: white;
+  font-size: 2rem;
+  background: #55606c;
+  min-height: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Featured Books and Books Section */
 
 .shop-info {
