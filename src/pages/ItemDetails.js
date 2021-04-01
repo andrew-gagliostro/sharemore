@@ -33,21 +33,14 @@ const ItemDetails = () => {
         <p>{endDate}</p>
         <h4>Current Price - $ {curPrice}</h4>
         <button
-          className="bid-link"
+          className="btn"
           onClick={() => {
             history.push("/shop");
           }}
         >
           Continue Shopping
         </button>
-        <button
-          className="bid-link"
-          onClick={() => {
-            history.push(`/bids/${item.id}`);
-          }}
-        >
-          Place Bid
-        </button>
+        <Link to={`/bids/${id}`}className="btn item-link">Place Bid</Link>
       </div>
     </section>
   );

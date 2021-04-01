@@ -74,7 +74,7 @@ a {
 }
 
 .home-head {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(./assets/back-head.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -400,18 +400,6 @@ nav ul {
   border-top: 2px solid black;
   opacity: 1;
 }
-
-/* Section for bid stuff */
-
-.bid-link {
-  color: white;
-  font-size: 2rem;
-  background: #55606c;
-  min-height: 5rem;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Featured Books and Books Section */
 
 .shop-info {

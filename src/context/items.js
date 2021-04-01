@@ -25,11 +25,10 @@ const ItemProvider = ({children}) => {
       try {
         await API.graphql(graphqlOperation(processBid, { input: payload }));
         console.log("Order is successful");
-        history.push("/doner");
+        history.push("/");
         
       } catch (err) {
         console.log(err);
-        history.push("/doner");
       }
     };
 

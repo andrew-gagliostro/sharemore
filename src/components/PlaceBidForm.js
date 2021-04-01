@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import { useHistory , useParams} from "react-router-dom";
 import { ItemContext } from "../context/items";
-import { withAuthenticator} from '@aws-amplify/ui-react';
 
 
 
@@ -11,34 +10,20 @@ const PlaceBidForm = () => {
 
   const { id } = useParams();
   const { placeBid } = useContext(ItemContext);
-
   const [BidDetails, setBidDetails] = useState({ item_id: id, bid_price: "", address: "", confirmed:false});
-  
   const history = useHistory();
 
   const { items } = useContext(ItemContext);
-
-  
     
 
-  const item = items.find((item) => {
-      return item.id === BidDetails.item_id;
-  });
+    const item = items.find((item) => {
+        return item.id === BidDetails.item_id;
+    });
+    if (!item) {
+        return <h3>Loading...</h3>;
+    }
 
-  
-
-
-  if (!item) {
-      return <h3>Loading...</h3>;
-  }
-
-
-
-
-
-  
-
-  const url = item.img;
+    const url = item.img;
 
 
 
@@ -48,11 +33,7 @@ const PlaceBidForm = () => {
   // Handle form submission.
   const handleSubmit = async (event) => {
       if(BidDetails.confirmed && !(BidDetails.address === "") && !(BidDetails.item_id === "") && !(BidDetails.bid_price === "")) {
-          console.log("success");
           placeBid(BidDetails);
-    }
-    else{
-      console.log("failed");
     }
   };
 
@@ -114,4 +95,4 @@ const PlaceBidForm = () => {
   );
 };
 
-export default withAuthenticator(PlaceBidForm);
+export default PlaceBidForm;
