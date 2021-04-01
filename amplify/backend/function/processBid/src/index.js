@@ -6,10 +6,12 @@ const cognitoIdentityServiceProvider = new CognitoIdentityServiceProvider();
 const USER_POOL_ID = "us-east-1_P7DrWOJBo";
 const ITEMBID_TABLE = "ItemBid-lnleozrryfhm3o4tgwvtwnll4y-smdev";
 const ITEMBID_TYPE = "ItemBid";
+import { useParams, useHistory } from "react-router-dom";
 
 
 
 
+const history = useHistory();
 const getUserEmail = async (event) => {
     const params = {
       UserPoolId: USER_POOL_ID,
@@ -50,8 +52,6 @@ const createProcessedBid = async (payload) => {
 /*
  * Get order details from processPayment lambda
  * Create an order
- * Link books to the order - Users can see the past orders and admins can view orders by user
- * Email the invoice (Will be added later)
  */
 exports.handler = async (event) => {
     try {
