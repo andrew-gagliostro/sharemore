@@ -92,6 +92,20 @@ a {
   max-height: 80vh;
 }
 
+.other-head {
+  background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  max-height: 10vh;
+}
+
+#other-footer {
+  max-height: 10vh;
+}
+
 #homeheight {
   min-height: 90vh;
 }
@@ -582,13 +596,13 @@ nav ul {
 .item-details {
   display: flex;
   flex-direction: column;
-  background: rgb(216, 188, 152);
+  background-image: linear-gradient(rgb(130, 113, 91), rgb(216, 188, 152));
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  height: 80vh;
+  height: 100%;
   text-align: center;
 }
 
@@ -628,11 +642,11 @@ nav ul {
 .placeBid-details {
   display: flex;
   flex-direction: column;
-  background: rgb(216, 188, 152);
+  background-image: linear-gradient(rgb(130, 113, 91), rgb(216, 188, 152));
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
   height: auto;
   text-align: center;
