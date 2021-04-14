@@ -7,7 +7,6 @@ export const getItemBid = /* GraphQL */ `
       id
       item_id
       userEmail
-      date
       bid_price
       createdAt
       updatedAt
@@ -37,7 +36,6 @@ export const listItemBids = /* GraphQL */ `
         id
         item_id
         userEmail
-        date
         bid_price
         createdAt
         updatedAt

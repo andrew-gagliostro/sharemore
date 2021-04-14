@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { listItems } from "../api/queries";
+import { createItemBid } from "../api/mutations";
 import { processBid } from "../api/mutations";
-import { useHistory } from "react-router-dom";
+
 const { v4: uuidv4 } = require("uuid");
 
 const ItemContext = React.createContext();
@@ -11,7 +12,7 @@ const ItemProvider = ({children}) => {
     const [items, setItems] = useState([]);
     const [featured, setFeatured] = useState([]);
     const [loading, setLoading] = useState(false);
-    const history = useHistory();
+    
 
     useEffect(() => {
         fetchItems();
@@ -23,9 +24,14 @@ const ItemProvider = ({children}) => {
         ...BidDetails
       };
       try {
-        await API.graphql(graphqlOperation(processBid, { input: payload }));
+        
+        console.log(payload);
+
+        /*await API.graphql(graphqlOperation( processBid, { input: payload }));*/
+
+        await API.graphql(graphqlOperation( createItemBid, { input: payload }));
         console.log("Order is successful");
-        history.push("/");
+        
         
       } catch (err) {
         console.log(err);

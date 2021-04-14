@@ -22,30 +22,30 @@ type Item
 
 type ItemBid
   @model(subscriptions: null)
-  @key(name: "byUser", fields: ["userEmail"])
   @auth(
     rules: [
       # allow admins to create bookorders for customers by using customer email in lambda
-      { allow: owner, identityClaim: "email", ownerField: "customer" }
       { allow: groups, groups: ["Admin"] }
+      { allow: private, operations: [create] }
+      { allow: owner, identityClaim: "email", ownerField: "userEmail" }
     ]
-  ) {
+  )
+  @key(name: "byUser", fields: ["userEmail"]) {
   id: ID!
   item_id: ID!
   userEmail: String!
-  date: String!
   bid_price: Float!
   item: Item @connection(fields: ["item_id"])
+}
+
+type Mutation {
+  processBid(input: ProcessBidInput!): BidStatus
+    @function(name: "finalizeBid-${env}")
 }
 
 enum BidStatus {
   SUCCESS
   FAILED
-}
-
-type Mutation {
-  processBid(input: ProcessBidInput!): BidStatus
-    @function(name: "processBid-${env}")
 }
 
 input ProcessBidInput {

@@ -72,7 +72,6 @@ export const createItemBid = /* GraphQL */ `
       id
       item_id
       userEmail
-      date
       bid_price
       createdAt
       updatedAt
@@ -100,7 +99,6 @@ export const updateItemBid = /* GraphQL */ `
       id
       item_id
       userEmail
-      date
       bid_price
       createdAt
       updatedAt
@@ -128,7 +126,6 @@ export const deleteItemBid = /* GraphQL */ `
       id
       item_id
       userEmail
-      date
       bid_price
       createdAt
       updatedAt

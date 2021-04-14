@@ -10,7 +10,8 @@ const PlaceBidForm = () => {
 
   const { id } = useParams();
   const { placeBid } = useContext(ItemContext);
-  const [BidDetails, setBidDetails] = useState({ item_id: id, bid_price: "", address: "", confirmed:false});
+  const [BidDetails, setBidDetails] = useState({ item_id: id, bid_price: "", userEmail: ""});
+  const [confirmed, setConfirmed] = useState({checked: false});
   const history = useHistory();
 
   const { items } = useContext(ItemContext);
@@ -23,7 +24,6 @@ const PlaceBidForm = () => {
         return <h3>Loading...</h3>;
     }
 
-    const url = item.img;
 
 
 
@@ -32,23 +32,29 @@ const PlaceBidForm = () => {
 
   // Handle form submission.
   const handleSubmit = async (event) => {
-      if(BidDetails.confirmed && !(BidDetails.address === "") && !(BidDetails.item_id === "") && !(BidDetails.bid_price === "")) {
+      if(confirmed.checked && !(BidDetails.userEmail === "") && !(BidDetails.item_id === "") && !(BidDetails.bid_price === "")) {
+          console.log(BidDetails);
           placeBid(BidDetails);
+          history.push("/");
     }
   };
+
+  const { image: url, itemSeller, itemName, description, endDate, curPrice } = item;
 
   return (
 
     <>
-    <section className="item-details">
-        <img alt="" className="detail-image" src={url}/>
+    <section className="placeBid-details">
       
-      <div className="detail-description">
-        <h2>{item.itemName}</h2>
-        <p>{item.description}</p>
-        <h3>{item.itemSeller}</h3>
-        <p>{item.endDate}</p>
-        <h4>Current Price - $ {item.curPrice}</h4>
+      <div className="placeBid-description">
+        <h2>{itemName}</h2>
+        <p>{description}</p>
+        <div className="placeBid-image">
+          <img alt="" src={url}/>
+        </div>
+        <h3>{itemSeller}</h3>
+        <p>{endDate}</p>
+        <h4>Current Price - $ {curPrice}</h4>
         <button
           className="btn"
           onClick={() => {
@@ -61,18 +67,20 @@ const PlaceBidForm = () => {
     </section>
     <form onSubmit={handleSubmit}>
       <div className="checkout-form">
+        <div className="bidInfo">
         <label htmlFor="bid-adress">Confirm Your Email Address</label>
         <input
           id="bid-address"
           type="text"
-          onChange={(e) => setBidDetails({ ...BidDetails, address: e.target.value })}
+          onChange={(e) => setBidDetails({ ...BidDetails, userEmail: e.target.value })}
         />
-        <div className="price-form">
+        </div>
+        <div className="bidInfo">
             <p><label htmlFor="price">Bid Price ($)</label>
                 <input
                     name="price"
                     type="text"
-                    placeholder="What is the starting price of the Item (USD)"
+                    placeholder="How much would you like to bid?"
                     onChange={(e) => setBidDetails({ ...BidDetails, bid_price: e.target.value })}
                     required
                 /></p>
@@ -81,15 +89,16 @@ const PlaceBidForm = () => {
             <p><label>Confirm Your Bid?</label>
                 <input type="checkbox"
                     className="featured-checkbox"
-                    checked={BidDetails.confirmed}
-                    onChange={() => setBidDetails({ ...BidDetails, confirmed: !BidDetails.featured })}
+                    checked={confirmed.checked}
+                    onChange={() => setConfirmed({ ...confirmed, checked: !confirmed.checked}) }
                 />
             </p>
         </div>  
       </div>
-      <button type="submit" className="btn">
+      <div className="checkout-form">
+      <button type="submit" className="btn checkout-form">
         Submit Bid
-      </button>
+      </button></div>
     </form>
     </>
   );
