@@ -59,10 +59,12 @@ a {
 
 .btn {
   padding: 2rem 6rem;
-  background: #4c6e97;
+  background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
 }
 
 .btn:hover {
@@ -272,17 +274,19 @@ nav ul {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
+  height: auto;
   width: 100%;
-  max-height: 30vh;
-  min-height: 20vh;
+  max-height: 20vh;
+  min-height: 10vh;
   background-color: rgb(220, 220, 220);
   border-top: 4px solid black;
   border-bottom: 4px solid black;
 }
 
 #footer-left {
-  width: 22vw;
-  font-size: 4vw;
+  width: 15vw;
+  font-size: 3vw;
   font-family: "Signika", sans-serif;
   font-weight: 200;
   display: flex;
@@ -323,6 +327,7 @@ nav ul {
   justify-content: space-between;
   font-size: 1.3vh;
   font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 0.5vh;
 }
 
 #footer div:hover {
@@ -593,30 +598,36 @@ nav ul {
 
 /* Item Details Section */
 
+.details {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .item-details {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(130, 113, 91), rgb(216, 188, 152));
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgb(130, 113, 91), rgb(216, 188, 152));
   align-items: center;
   width: 100%;
   margin: auto;
-  height: 100%;
   text-align: center;
 }
 
 .detail-image {
-  max-height: 40vh;
-  max-width: 60vw;
   padding-bottom: 3 rem;
 }
 
 .detail-description {
   display: flex;
-  flex: 1 1 50rem;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 75%;
   padding: 0 5rem;
 }
@@ -624,12 +635,16 @@ nav ul {
 .placeBid-image {
   justify-content: center;
   align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 
 .placeBid-image img {
   max-width: 50%;
   max-height: 50%;
   align-items: center;
+  padding: 1px;
+  box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
 }
 
 .placeBid-description {

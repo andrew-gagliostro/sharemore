@@ -23,16 +23,19 @@ const ItemDetails = () => {
 
   return (
     <>
+    <section className="details">
     <OtherHead></OtherHead>
     <section className="item-details">
-      
+      <div className="placeBid-image">
+          <img alt="" src={url}/>
+      </div>
       <div className="detail-description">
-        <img alt="" className="detail-image" src={url}/>
+
         <h2>{itemName}</h2>
         <p>{description}</p>
         <h3>{itemSeller}</h3>
-        <p>{endDate}</p>
-        <h4>Current Price - $ {curPrice}</h4>
+        <p>Auction End: {endDate} @ 12am</p>
+        <h4>Current Winning Bid (USD): ${curPrice}</h4>
         <button
           className="btn"
           onClick={() => {
@@ -41,11 +44,13 @@ const ItemDetails = () => {
         >
           Continue Shopping
         </button>
-        <Link to={`/bids/${id}`}className="btn item-link">Place Bid</Link>
+        <Link to={`/bids/${id}`}className="btn">Place Bid</Link>
       </div>
+    
     </section>
-    <Footer id="other-footer"></Footer>
-  </>
+    </section>
+    <Footer></Footer>
+    </>
   );
 };
 
