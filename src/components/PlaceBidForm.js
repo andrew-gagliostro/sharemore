@@ -57,7 +57,7 @@ const PlaceBidForm = () => {
         </div>
         <h3>{itemSeller}</h3>
         <p>{endDate}</p>
-        <h4>Current Price - $ {curPrice}</h4>
+        <h4>Current Winning Bid (USD): ${curPrice}</h4>
         <button
           className="btn"
           onClick={() => {
