@@ -94,14 +94,15 @@ a {
   max-height: 80vh;
 }
 
-.other-head {
+#other-head-nav {
   background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   max-height: 10vh;
+}
+
+.other-head header {
 }
 
 #other-footer {
@@ -308,6 +309,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   margin-left: 2rem;
+  margin-top: 0.5vw;
 }
 #footer-right {
   max-width: 32vw;
@@ -324,10 +326,9 @@ nav ul {
 }
 
 #footer-div {
-  justify-content: space-between;
-  font-size: 1.3vh;
+  font-size: 0.6vw;
+
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-top: 0.5vh;
 }
 
 #footer div:hover {
@@ -429,7 +430,6 @@ nav ul {
 /* Featured Books and Books Section */
 
 .shop-info {
-  background: floralwhite;
   width: 100%;
 }
 
@@ -556,7 +556,7 @@ nav ul {
   margin: 4rem 5rem;
   padding-bottom: 2rem;
   border-top: 1px solid #efefef;
-  background: floralwhite;
+  background-image: linear-gradient(rgb(179, 157, 129), rgb(216, 188, 152));
 }
 
 .featured-list {
@@ -573,17 +573,17 @@ nav ul {
 }
 
 .item-image img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%;
+  max-height: 60%;
   align-items: center;
+  box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
 }
 
 .item-link {
-  flex: 1 1 100rem;
   background: #55606c;
   font-size: 1.7rem;
   width: 100%;
-  max-height: 10vh;
+  align-self: flex-start;
 }
 
 .item-link:hover {

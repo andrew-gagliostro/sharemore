@@ -15,9 +15,9 @@ const OtherHead = () => {
     return (
         
         
-        <section className="other-head">
+        <section>
         <header >
-            <div id="home-head-nav">
+            <div id="other-head-nav">
                 <h2 id="logo">ShareMore</h2>
                 <DropDown></DropDown>
             </div>
