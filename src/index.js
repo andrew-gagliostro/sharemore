@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ItemProvider } from "./context/items";
+import {ItemBidProvider} from "./context/itemBids";
 
 ReactDOM.render(
   <ItemProvider>
+  <ItemBidProvider>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  </ItemBidProvider>
   </ItemProvider>,
   document.getElementById('root')
 );

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
-import { listItems } from "../api/queries";
-import { createItemBid } from "../api/mutations";
+import { getItem, listItems } from "../api/queries";
+import { createItemBid, updateItem } from "../api/mutations";
 import { processBid } from "../api/mutations";
 
 const { v4: uuidv4 } = require("uuid");
@@ -17,7 +17,8 @@ const ItemProvider = ({children}) => {
     useEffect(() => {
         fetchItems();
       }, []);
-      
+    
+
     const placeBid = async (BidDetails) => {
       const payload = {
         id: uuidv4(),
@@ -30,6 +31,30 @@ const ItemProvider = ({children}) => {
         /*await API.graphql(graphqlOperation( processBid, { input: payload }));*/
 
         await API.graphql(graphqlOperation( createItemBid, { input: payload }));
+
+        console.log(BidDetails)
+
+        var item = items.find((item) => {
+          return item.id === BidDetails.item_id;
+        });
+        
+        /*let temp = await API.graphql(graphqlOperation( getItem , {input: a } ));*/
+        /*
+        temp.curPrice = BidDetails.bid_price;
+
+        await API.graphql(graphqlOperation( updateItem, { input: temp }));
+        */
+
+
+        if(item !== null ) {
+          item.curPrice = BidDetails.bid_price;
+          const itemIn = { id: item.id, itemSeller: item.itemSeller, curPrice: BidDetails.bid_price};
+          await API.graphql(graphqlOperation( updateItem, {input: itemIn }));
+          console.log("worked");
+        }
+
+        
+
         console.log("Order is successful");
         
         

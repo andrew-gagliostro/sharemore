@@ -102,7 +102,8 @@ a {
   max-height: 10vh;
 }
 
-.other-head header {
+#other-head-nav > * {
+  margin-top: 2vh;
 }
 
 #other-footer {
@@ -632,6 +633,10 @@ nav ul {
   padding: 0 5rem;
 }
 
+.detail-description > * {
+  margin-bottom: 1vh;
+}
+
 .placeBid-image {
   justify-content: center;
   align-items: center;
@@ -652,6 +657,10 @@ nav ul {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0 1rem;
+}
+
+.placeBid-description > * {
+  margin-bottom: 2vh;
 }
 
 .placeBid-details {
@@ -678,6 +687,12 @@ nav ul {
 .checkout-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 3rem 0;
+}
+
+.checkout-form > * {
+  margin-bottom: 1vh;
 }
