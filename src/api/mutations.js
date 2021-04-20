@@ -1,11 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const processBid = /* GraphQL */ `
-  mutation ProcessBid($input: ProcessBidInput!) {
-    processBid(input: $input)
-  }
-`;
 export const createItem = /* GraphQL */ `
   mutation CreateItem(
     $input: CreateItemInput!
