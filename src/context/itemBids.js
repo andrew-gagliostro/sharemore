@@ -57,10 +57,12 @@ const ItemBidProvider = ({children}) => {
     try {
         setLoading(true);
         // Switch authMode to API_KEY for public access
+        /*
         const { data } = await API.graphql({
         query: listItemBids,
         authMode: "API_KEY"
-        });
+        });*/
+        let data = await API.graphql(graphqlOperation(listItemBids));
         const itemBids = data.listItemBids.items;
 
         setItemBids(itemBids);

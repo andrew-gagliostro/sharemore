@@ -37,21 +37,3 @@ type ItemBid
   bid_price: Float!
   item: Item @connection(fields: ["item_id"])
 }
-
-type Mutation {
-  processBid(input: ProcessBidInput!): BidStatus
-    @function(name: "finalizeBid-${env}")
-}
-
-enum BidStatus {
-  SUCCESS
-  FAILED
-}
-
-input ProcessBidInput {
-  id: ID!
-  item_id: ID!
-  bid_price: Float!
-  address: String
-  confirmed: Boolean!
-}

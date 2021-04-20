@@ -37,7 +37,7 @@ const AccountLinks = () => {
             <>
             <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/shop') }}> Account </Dropdown.Item><br></br>
             <Dropdown.Item id="dropDownItem">  ----   </Dropdown.Item>
-            <Dropdown.Item id="dropDownItem" > <AmplifySignOut/> </Dropdown.Item>
+            <Dropdown.Item id="dropDownItem" > <AmplifySignOut> </AmplifySignOut> </Dropdown.Item>
             </>
         )
     }
