@@ -5,7 +5,7 @@ type Item
       # allow admins to create, update and delete books
       { allow: groups, groups: ["Admin"] }
       # allow all authenticated users to view books
-      { allow: private, operations: [read] }
+      { allow: private, operations: [read, update] }
       # allow all guest users (not authenticated) to view books
       { allow: public, operations: [read] }
     ]
