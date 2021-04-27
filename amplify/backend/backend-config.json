@@ -37,18 +37,5 @@
       "service": "S3",
       "providerPlugin": "awscloudformation"
     }
-  },
-  "function": {
-    "processBid": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": []
-    },
-    "finalizeBid": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
   }
 }
