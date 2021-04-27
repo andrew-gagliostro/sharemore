@@ -14,7 +14,6 @@ const HomeHead = () => {
 
     return (
         
-        
         <section className="home-head">
         <header >
             <div id="home-head-nav">
