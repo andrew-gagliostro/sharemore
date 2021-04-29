@@ -128,6 +128,10 @@ a {
   max-width: 20vw;
   max-height: 25vh;
 }
+.homeMoneyPics {
+  width: 40vw;
+}
+
 
 nav {
   display: flex;
@@ -253,7 +257,7 @@ nav ul {
 }
 
 .about-info h4 {
-  padding: 5rem;
+  margin-top: 1vh;
   font-weight: 150;
   color: rgb(170, 168, 168);
   display: flex;
@@ -262,11 +266,15 @@ nav ul {
 
 .about-info div {
   max-width: 60vh;
-  margin-right: 3rem;
+  margin:3%;
+}
+
+#sharePic {
+  margin:4%;
 }
 
 .about-info img {
-  box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
+  /*box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;*/
 }
 
 /*Footer STuff */

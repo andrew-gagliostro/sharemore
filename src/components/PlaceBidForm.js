@@ -3,6 +3,7 @@ import { useHistory , useParams} from "react-router-dom";
 import { ItemContext } from "../context/items";
 import OtherHead from "../components/OtherHead";
 import Footer from "../components/Footer";
+import {withAuthenticator} from '@aws-amplify/ui-react';
 
 
 
@@ -108,4 +109,4 @@ const PlaceBidForm = () => {
   );
 };
 
-export default PlaceBidForm;
+export default withAuthenticator(PlaceBidForm);

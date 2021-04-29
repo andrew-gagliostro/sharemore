@@ -1,10 +1,13 @@
 import React from "react";
 import HomeHead from "../components/HomeHead";
-import FirstPic from "../assets/jakob-owens-olHGGd_zYtE-unsplash.jpg";
-import SecondPic from "../assets/nina-strehl-Ds0ZIA5gzc4-unsplash.jpg";
-import ThirdPic from "../assets/anthony-delanoix-hzgs56Ze49s-unsplash.jpg";
+import Dunk from "../assets/dunk.png";
+import Money from "../assets/money.png";
+import PutInBox from "../assets/putinbox.png";
+import Plane from "../assets/plane.png";
+import Handoff from "../assets/handoff.png";
 import LastPic from "../assets/joel-muniz-A4Ax1ApccfA-unsplash.jpg";
 import Footer from "../components/Footer";
+
 
 const Home = () => {
     return (
@@ -22,18 +25,21 @@ const Home = () => {
                     with their fans
                     </div>
 
-                <img alt ="" className = "homepics"src={FirstPic}></img>
+                    
                 </h4>
-
+                <img className="homepics" alt ="" src={Dunk}></img>
 
                 <h4>
                     <div>
                     Our goal is to monitize the fandom industry: allowing true fans to get the merchandise 
                     they want while distributing profits to worthy causes that buyers and sellers may choose!
                     </div>
-                    <img alt="" className = "homepics"src={SecondPic}></img>
+                    
 
                 </h4>
+                
+                    <img alt="" className="homeMoneyPics" src={Money}></img>
+                
 
                 
 
@@ -42,7 +48,13 @@ const Home = () => {
                     Public figures: choose your cause and list anything: 
                     from an autographed ball to a pair of shoes in the back of your closet
                     </div>
-                <img alt="" className="homepics"src={ThirdPic}></img>
+
+                </h4>
+                <h4>
+
+                    <img alt="" className="homepics"src={PutInBox}></img>
+                    <img alt="" className="homepics"src={Plane}></img>
+                    <img alt="" className="homepics"src={Handoff}></img>
 
                 </h4>
 
@@ -50,7 +62,12 @@ const Home = () => {
                     <div>
                         Fans: find something that strikes a chord and buy now or place a bid!
                     </div>
-                <img alt="" className="homepics"src={LastPic}></img>
+
+                </h4>
+
+                <h4>
+
+                    <img alt="" id="sharePic" className="homepics"src={LastPic}></img>
 
                 </h4>
 
