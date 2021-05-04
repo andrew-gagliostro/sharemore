@@ -252,6 +252,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 5vh;
   align-items: center;
   text-align: center;
 }
@@ -447,6 +448,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   background-size: cover;
+  padding-bottom:5vh;
   min-height: 80vh;
 }
 
@@ -616,7 +618,6 @@ nav ul {
 
 .item-details {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -625,11 +626,11 @@ nav ul {
   width: 100%;
   margin: auto;
   text-align: center;
+  padding-bottom:5vh;
+  min-height:80vh;
 }
 
-.detail-image {
-  padding-bottom: 3 rem;
-}
+
 
 .detail-description {
   display: flex;
@@ -637,13 +638,44 @@ nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 75%;
-  padding: 0 5rem;
+  padding-right: 5vw;
+  /*height: 75%;
+  padding: 0 5rem;*/
 }
 
 .detail-description > * {
   margin-bottom: 1vh;
 }
+
+.side-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.itemDetails-image {
+  justify-content: center;
+  max-width:50%;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+
+}
+
+
+.itemDetails-image img {
+  max-width: 40%;
+  max-height: 40%;
+  align-items: center;
+  padding:1px;
+  border:1px solid #021a40;
+  background-color:black;
+  box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
+}
+
 
 .placeBid-image {
   justify-content: center;
@@ -654,7 +686,7 @@ nav ul {
 
 .placeBid-image img {
   max-width: 50%;
-  max-height: 50%;
+  max-height: 60vh;
   align-items: center;
   padding: 1px;
   box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;

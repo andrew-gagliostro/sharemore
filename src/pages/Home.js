@@ -21,7 +21,7 @@ const Home = () => {
             <section className="about-info">
                 <h4>
                     <div>
-                    ShareMore is the only mission-based online marketplace working to connect public figures 
+                    ShareMore is the only mission-based online marketplace working to connect celebrities 
                     with their fans
                     </div>
 
@@ -76,7 +76,7 @@ const Home = () => {
                 <h4>
                     <div>
                     Everyone: donating is just one of the endless ways to help the world around us. 
-                    Be Kind, Spread Love, and Share More.
+                    Be Kind, Show Love, and Share More.
                     </div>
 
                 </h4>

@@ -36,25 +36,27 @@ const ItemDetails = () => {
     <section className="details">
     <OtherHead></OtherHead>
     <section className="item-details">
-      <div className="placeBid-image">
-          <img alt="" src={url}/>
-      </div>
-      <div className="detail-description">
+      <div className ="side-details">
+        <div className="itemDetails-image">
+            <img alt=" " src={url}/>
+        </div>
+        <div className="detail-description">
 
-        <h2>{itemName}</h2>
-        <p>{description}</p>
-        <h3>{itemSeller}</h3>
-        <p>Auction End: {endDate} @ 12am</p>
-        <h4>Current Winning Bid (USD): ${curPrice}</h4>
-        <button
-          className="btn"
-          onClick={() => {
-            history.push("/shop");
-          }}
-        >
-          Continue Shopping
-        </button>
-        <Link to={`/bids/${id}`}className="btn">Place Bid</Link>
+          <h2>{itemName}</h2>
+          <p>{description}</p>
+          <h3>{itemSeller}</h3>
+          <p>Auction End: {endDate} @ 12am</p>
+          <h4>Current Winning Bid (USD): ${curPrice}</h4>
+          <button
+            className="btn"
+            onClick={() => {
+              history.push("/shop");
+            }}
+          >
+            Continue Shopping
+          </button>
+          <Link to={`/bids/${id}`}className="btn">Place Bid</Link>
+        </div>
       </div>
     
     </section>
