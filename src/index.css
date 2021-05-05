@@ -658,7 +658,7 @@ nav ul {
 
 .itemDetails-image {
   justify-content: center;
-  max-width:50%;
+  width:100%;
   align-items: center;
   padding-top: 2vh;
   padding-bottom: 3vh;
