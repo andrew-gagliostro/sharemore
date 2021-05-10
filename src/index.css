@@ -116,10 +116,6 @@ a {
   max-height: 9rem;
 }
 
-.otherDrop {
-  max-height: 40%;
-}
-
 #other-head-nav {
   background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
   display: flex;
