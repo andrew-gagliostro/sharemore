@@ -121,7 +121,9 @@ a {
 #home-head-nav {
   display: flex;
   justify-content: center;
-  margin: 2rem;
+}
+#home-head-nav h2 {
+  margin-top: 2rem;
 }
 
 .homepics {
@@ -289,7 +291,7 @@ nav ul {
   width: 100%;
   max-height: 20vh;
   min-height: 10vh;
-  background-color: rgb(220, 220, 220);
+  background-color: whitesmoke;
   border-top: 4px solid black;
   border-bottom: 4px solid black;
 }
@@ -439,7 +441,31 @@ nav ul {
 /* Featured Books and Books Section */
 
 .shop-info {
-  width: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  /* For IE 8*/
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  z-index: 10;
+  padding: 10px;
+  -moz-box-shadow: 0px 0px 7px #000000;
+  -webkit-box-shadow: 0px 0px 7px #000000;
+  box-shadow: 0px 0px 7px #000000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.shop-info p {
+  color: red;
+  margin-top: 0.25rem;
 }
 
 .shop-back {
@@ -566,7 +592,15 @@ nav ul {
   margin: 4rem 5rem;
   padding-bottom: 2rem;
   border-top: 1px solid #efefef;
-  background-image: linear-gradient(rgb(179, 157, 129), rgb(216, 188, 152));
+  /*background-image: linear-gradient(rgb(179, 157, 129), rgb(216, 188, 152));*/
+  background-color: rgb(253, 247, 218);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  /* For IE 8*/
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  z-index: 10;
+  -moz-box-shadow: 0px 0px 7px #000000;
+  -webkit-box-shadow: 0px 0px 7px #000000;
+  box-shadow: 0px 0px 7px #000000;
 }
 
 .featured-list {
@@ -620,7 +654,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(rgb(130, 113, 91), rgb(216, 188, 152));
+  background-image: linear-gradient(rgb(172, 172, 172), whitesmoke);
   align-items: center;
   width: 100%;
   margin: auto;
@@ -635,8 +669,22 @@ nav ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-right: 5vw;
   min-width: 50vw;
+  background-color: cornsilk;
+  border: 0.5rem solid rgb(59, 59, 59);
+  background-size: cover;
+  padding: 2rem;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  /* For IE 8*/
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  z-index: 10;
+  padding: 10px;
+  -moz-box-shadow: 0px 0px 7px #000000;
+  -webkit-box-shadow: 0px 0px 7px #000000;
+  box-shadow: 0px 0px 7px #000000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   /*height: 75%;
   padding: 0 5rem;*/
 }
@@ -646,19 +694,20 @@ nav ul {
 }
 
 .detail-description h2 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 .detail-description p {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .detail-description h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .detail-description h4 {
-  font-size: 3.5rem;
+  color: rgb(172, 34, 34);
+  font-size: 2rem;
 }
 
 .side-details {
@@ -717,7 +766,6 @@ nav ul {
 .placeBid-details {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(130, 113, 91), rgb(216, 188, 152));
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -725,6 +773,7 @@ nav ul {
   margin: auto;
   height: auto;
   text-align: center;
+  background-color: whitesmoke;
 }
 
 /*Checkout Section */
@@ -736,12 +785,23 @@ nav ul {
 }
 
 .checkout-form {
+  /*
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 3rem 0;
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(251, 246, 223);
+  border: 0.2rem solid rgb(59, 59, 59);
+  background-size: cover;
+  padding: 2rem;
 }
 
 .checkout-form > * {
