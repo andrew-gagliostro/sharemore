@@ -47,14 +47,7 @@ const ItemDetails = () => {
           <h3>{itemSeller}</h3>
           <p>Auction End: {endDate} @ 12am</p>
           <h4>Current Winning Bid (USD): ${curPrice}</h4>
-          <button
-            className="btn"
-            onClick={() => {
-              history.push("/shop");
-            }}
-          >
-            Continue Shopping
-          </button>
+          <Link to={"/shop"} className="btn"> Continue Shopping</Link>
           <Link to={`/bids/${id}`}className="btn">Place Bid</Link>
         </div>
       </div>

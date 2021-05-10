@@ -24,9 +24,9 @@ const Shop = () => {
             </h3>
         </section>
         <section className="shop-back">
-        <div className="items featured-list">
+        <div className="items">
             {featured.map(({ id, image, itemSeller, itemName, curPrice, endDate}) => (
-                <article key={id} className="item featured-item">
+                <article key={id} className="item">
                     <div className="item-image">
                         <img src={image} alt={itemName} />
                     </div>
@@ -36,7 +36,7 @@ const Shop = () => {
                     <div> Current Price: ${curPrice} USD </div>
                     <p> Bidding Ends: {endDate}</p>
                     </div>
-                    <Link to={`items/${id}`} className="btn item-link">details</Link>
+                    <Link to={`items/${id}`} className="btn" id="shop-btn">details</Link>
                 </article>
             ))}
         </div>

@@ -14,7 +14,8 @@ html {
 }
 
 body {
-  font-family: "Trebuchet MS", sans-serif;
+  /*font-family: "Trebuchet MS", sans-serif;*/
+  font-family: "proxima-nova", sans-serif;
 }
 
 h1 {
@@ -58,13 +59,22 @@ a {
 }
 
 .btn {
-  padding: 2rem 6rem;
+  padding: 1.5rem 6rem;
   background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
+
   margin-bottom: 1vh;
   margin-top: 1vh;
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  /* For IE 8*/
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  z-index: 10;
+  -moz-box-shadow: 0px 0px 7px rgb(28, 44, 111);
+  -webkit-box-shadow: 0px 0px 7px rgb(28, 44, 111);
+  box-shadow: 0px 0px 7px rgb(28, 44, 111);
 }
 
 .btn:hover {
@@ -94,10 +104,24 @@ a {
   max-height: 80vh;
 }
 
+.other-head {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url(./assets/back-head.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  display: flex;
+  flex-direction: column;
+  min-height: 4rem;
+  max-height: 9rem;
+}
+
 #other-head-nav {
   background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
   max-height: 10vh;
 }
@@ -158,7 +182,7 @@ nav ul {
   flex: 2 1 70rem;
   margin-top: 2px;
   align-items: center;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-weight: 600;
 }
 
@@ -227,8 +251,18 @@ nav ul {
   display: flex;
   color: rgb(93, 92, 92);
   width: 70vw;
-  font-family: "Trebuchet MS", sans-serif;
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "proxima-nova", sans-serif;
   font-weight: 500;
+}
+#otherlogo {
+  display: flex;
+  color: rgb(93, 92, 92);
+  width: 70vw;
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 #logo li {
@@ -249,7 +283,8 @@ nav ul {
   background-position: center;
   background-blend-mode: hue;
   min-height: 50vh;
-  font-family: "Trebuchet MS", sans-serif;
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "proxima-nova", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -360,7 +395,8 @@ nav ul {
   background-position: center;
   background-blend-mode: hue;
   min-height: 50vh;
-  font-family: "Trebuchet MS", sans-serif;
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "proxima-nova", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -375,7 +411,8 @@ nav ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-family: "Trebuchet MS", sans-serif;
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "proxima-nova", sans-serif;
   background: rgb(23, 37, 93);
   color: rgb(170, 168, 168);
   opacity: 1;
@@ -396,7 +433,8 @@ nav ul {
   background-size: cover;
   background-position: center;
   min-height: 43vh;
-  font-family: "Trebuchet MS", sans-serif;
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "proxima-nova", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
@@ -407,7 +445,8 @@ nav ul {
 .home-hero {
   background-position: center;
   min-height: 43vh;
-  font-family: "Trebuchet MS", sans-serif;
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "proxima-nova", sans-serif;
   color: white;
   display: flex;
   flex-direction: column;
@@ -432,7 +471,8 @@ nav ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-family: "Trebuchet MS", sans-serif;
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "proxima-nova", sans-serif;
   background: rgb(23, 37, 93);
   color: rgb(170, 168, 168);
   border-top: 2px solid black;
@@ -572,6 +612,9 @@ nav ul {
   width: 100%;
 }
 
+/*
+For Items Featured List */
+
 .items {
   display: flex;
   flex-wrap: wrap;
@@ -579,6 +622,7 @@ nav ul {
   text-align: center;
   width: 80%;
   margin: auto;
+  justify-content: space-evenly;
 }
 
 .item {
@@ -586,12 +630,11 @@ nav ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);*/
   width: 48rem;
   height: 40rem;
-  margin: 4rem 5rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #efefef;
+  /*margin: 4rem 5rem;*/
+  /*border-top: 1px solid #efefef;*/
   /*background-image: linear-gradient(rgb(179, 157, 129), rgb(216, 188, 152));*/
   background-color: rgb(253, 247, 218);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
@@ -601,13 +644,6 @@ nav ul {
   -moz-box-shadow: 0px 0px 7px #000000;
   -webkit-box-shadow: 0px 0px 7px #000000;
   box-shadow: 0px 0px 7px #000000;
-}
-
-.featured-list {
-  justify-content: space-evenly;
-}
-
-.featured-item {
   margin: 8rem 5rem;
 }
 
@@ -617,10 +653,20 @@ nav ul {
 }
 
 .item-image img {
+  /*
   max-width: 90%;
   max-height: 60%;
+  */
   align-items: center;
-  box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
+  margin-bottom: 2rem;
+  /*box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  /* For IE 8*/
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+  z-index: 10;
+  -moz-box-shadow: 0px 0px 7px #000000;
+  -webkit-box-shadow: 0px 0px 7px #000000;
+  box-shadow: 0px 0px 7px #000000;
 }
 
 .item-link {
@@ -706,7 +752,7 @@ nav ul {
 }
 
 .detail-description h4 {
-  color: rgb(172, 34, 34);
+  color: red;
   font-size: 2rem;
 }
 
@@ -728,6 +774,7 @@ nav ul {
 }
 
 .itemDetails-image img {
+  margin: 2rem 3rem;
   max-width: 40vw;
   max-height: 40vh;
   align-items: center;
