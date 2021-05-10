@@ -132,7 +132,6 @@ a {
   width: 40vw;
 }
 
-
 nav {
   display: flex;
   /*flex-wrap: wrap;*/
@@ -267,11 +266,11 @@ nav ul {
 
 .about-info div {
   max-width: 60vh;
-  margin:3%;
+  margin: 3%;
 }
 
 #sharePic {
-  margin:4%;
+  margin: 4%;
 }
 
 .about-info img {
@@ -448,7 +447,7 @@ nav ul {
   display: flex;
   flex-direction: row;
   background-size: cover;
-  padding-bottom:5vh;
+  padding-bottom: 5vh;
   min-height: 80vh;
 }
 
@@ -626,11 +625,9 @@ nav ul {
   width: 100%;
   margin: auto;
   text-align: center;
-  padding-bottom:5vh;
-  min-height:80vh;
+  padding-bottom: 5vh;
+  min-height: 80vh;
 }
-
-
 
 .detail-description {
   display: flex;
@@ -639,6 +636,7 @@ nav ul {
   align-items: center;
   text-align: center;
   padding-right: 5vw;
+  min-width: 50vw;
   /*height: 75%;
   padding: 0 5rem;*/
 }
@@ -647,35 +645,48 @@ nav ul {
   margin-bottom: 1vh;
 }
 
+.detail-description h2 {
+  font-size: 5rem;
+}
+
+.detail-description p {
+  font-size: 3rem;
+}
+
+.detail-description h3 {
+  font-size: 2rem;
+}
+
+.detail-description h4 {
+  font-size: 3.5rem;
+}
+
 .side-details {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
   align-items: center;
   text-align: center;
 }
 
 .itemDetails-image {
   justify-content: center;
-  width:100%;
   align-items: center;
-  padding-top: 2vh;
-  padding-bottom: 3vh;
-
+  padding-bottom: 2vh;
+  min-width: 30vw;
 }
-
 
 .itemDetails-image img {
-  max-width: 40%;
-  max-height: 40%;
+  max-width: 40vw;
+  max-height: 40vh;
   align-items: center;
-  padding:1px;
-  border:1px solid #021a40;
-  background-color:black;
+  padding: 1px;
+  border: 1px solid #021a40;
+  background-color: black;
   box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;
 }
-
 
 .placeBid-image {
   justify-content: center;
