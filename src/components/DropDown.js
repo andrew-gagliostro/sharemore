@@ -15,15 +15,15 @@ const DropDown = () => {
 
     return (
         
-        <Dropdown>
-        <Dropdown.Toggle id="dropDownMenu">
-        <div className="container">
+        <Dropdown className="otherDrop">
+        <Dropdown.Toggle id="dropDownMenu" className="otherDrop">
+        <div className="container otherDrop">
             <div className="bar"></div>
             <div className="bar"></div>
             <div className="bar"></div>
         </div>
         </Dropdown.Toggle>
-        <Dropdown.Menu id="homenav" >
+        <Dropdown.Menu id="homenav" className="otherDrop" >
             <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/') }}>Home</Dropdown.Item>
             <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/shop') }}>Shop ShareMore</Dropdown.Item>
             <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/doner') }}>Doner/Partner Info</Dropdown.Item>
