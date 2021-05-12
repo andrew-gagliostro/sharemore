@@ -34,7 +34,7 @@ const Shop = () => {
                     <h4> {itemSeller}</h4>
                     <div>{itemName}</div>
                     <div> Current Price: ${curPrice} USD </div>
-                    <p> Bidding Ends: {endDate}</p>
+                    <p> Bidding Ends: {endDate} @ 12:00 AM EST</p>
                     </div>
                     <Link to={`items/${id}`} className="btn" id="shop-btn">details</Link>
                 </article>

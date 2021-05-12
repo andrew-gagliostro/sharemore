@@ -18,7 +18,7 @@ const HomeHead = () => {
         <header >
             <div id="home-head-nav">
                 <h2 id="logo">ShareMore</h2>
-                <DropDown></DropDown>
+                <DropDown id="trans"></DropDown>
             </div>
         </header>
         <section className="home-hero">

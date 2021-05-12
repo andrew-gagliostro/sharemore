@@ -57,7 +57,7 @@ const PlaceBidForm = () => {
           <img alt="" src={url}/>
         </div>
         <h3>{itemSeller}</h3>
-        <p>{endDate}</p>
+        <p>{endDate} @ 12:00 AM EST</p>
         <h4>Current Winning Bid (USD): ${curPrice}</h4>
         <button
           className="btn"

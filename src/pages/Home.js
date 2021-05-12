@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 const Home = () => {
     return (
         <>
+            
             <HomeHead></HomeHead>
             
             <h3 className="about-head">

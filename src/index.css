@@ -142,6 +142,11 @@ a {
   font-weight: 200;
 }
 
+#trans {
+  border: 0px;
+  background-color: transparent;
+}
+
 #home-head-nav {
   display: flex;
   justify-content: center;

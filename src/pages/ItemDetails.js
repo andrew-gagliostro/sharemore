@@ -45,7 +45,7 @@ const ItemDetails = () => {
           <h2>{itemName}</h2>
           <p>{description}</p>
           <h3>{itemSeller}</h3>
-          <p>Auction End: {endDate} @ 12am</p>
+          <p>Auction End: {endDate} @ 12:00 AM EST</p>
           <h4>Current Winning Bid (USD): ${curPrice}</h4>
           <Link to={"/shop"} className="btn"> Continue Shopping</Link>
           <Link to={`/bids/${id}`}className="btn">Place Bid</Link>
