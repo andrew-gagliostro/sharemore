@@ -37,3 +37,20 @@ type ItemBid
   bid_price: Float!
   item: Item @connection(fields: ["item_id"])
 }
+
+type Mutation {
+  placeBidMut(input: PlaceBidInput): PlaceBidResult
+    @function(name: "makeBid-${env}")
+}
+
+input PlaceBidInput {
+  id: ID!
+  item_id: ID!
+  bid_price: Float!
+  userEmail: String!
+}
+
+enum PlaceBidResult {
+  SUCCESS
+  FAILED
+}

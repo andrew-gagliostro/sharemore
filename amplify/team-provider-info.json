@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "sharemoreea7d1a79": {}
+      },
+      "function": {
+        "makeBid": {
+          "deploymentBucketName": "amplify-sharemore-smdev-173247-deployment",
+          "s3Key": "amplify-builds/makeBid-4839644866676a567664-build.zip"
+        }
       }
     }
   }

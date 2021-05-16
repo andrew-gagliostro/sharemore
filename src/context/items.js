@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { getItem, listItems } from "../api/queries";
 import { createItemBid, updateItem } from "../api/mutations";
-import { processBid } from "../api/mutations";
+import { placeBidMut } from "../api/mutations";
 
 const { v4: uuidv4 } = require("uuid");
 
@@ -30,7 +30,7 @@ const ItemProvider = ({children}) => {
 
         /*await API.graphql(graphqlOperation( processBid, { input: payload }));*/
 
-        await API.graphql(graphqlOperation( createItemBid, { input: payload }));
+        
 
         console.log(BidDetails)
 
@@ -46,16 +46,22 @@ const ItemProvider = ({children}) => {
         */
 
 
-        if(item !== null ) {
+        if(item !== null && BidDetails.bid_price > item.curPrice) {
           item.curPrice = BidDetails.bid_price;
+          await API.graphql(graphqlOperation( placeBidMut, { input: payload }));
           const itemIn = { id: item.id, itemSeller: item.itemSeller, curPrice: BidDetails.bid_price};
           await API.graphql(graphqlOperation( updateItem, {input: itemIn }));
           console.log("worked");
+          console.log("Order is successful");
+        }
+
+        else {
+          console.log("Bid price is not enough");
         }
 
         
 
-        console.log("Order is successful");
+        
         
         
       } catch (err) {
