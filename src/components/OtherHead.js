@@ -16,7 +16,7 @@ const OtherHead = () => {
         
         
         <section className="other-head">
-        <header >
+        <header className="home-top">
             <div id="other-head-nav">
                 <h2 id="otherlogo">ShareMore</h2>
                 <DropDown></DropDown>

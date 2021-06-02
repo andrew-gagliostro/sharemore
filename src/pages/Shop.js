@@ -35,6 +35,7 @@ const Shop = () => {
                     <div>{itemName}</div>
                     <div> Current Price: ${curPrice} USD </div>
                     <p> Bidding Ends: {endDate} @ 12:00 AM EST</p>
+                    <p> NOTICE: EXISTING PRODUCT OR ENDORSED BY CELEBRITY: EXAMPLE ITEMS</p>
                     </div>
                     <Link to={`items/${id}`} className="btn" id="shop-btn">details</Link>
                 </article>

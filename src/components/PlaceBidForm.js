@@ -100,7 +100,7 @@ const PlaceBidForm = () => {
         </div>  
       </div>
       <div className="checkout-form">
-      <button type="submit" className="btn checkout-form">
+      <button type="submit" className="btn">
         Submit Bid
       </button></div>
     </form>

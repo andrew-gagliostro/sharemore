@@ -138,6 +138,10 @@ a {
   min-height: 90vh;
 }
 
+#home-top {
+  max-height: 10vh;
+}
+
 .home-head h3 {
   font-weight: 200;
 }
@@ -184,6 +188,8 @@ nav ul {
 #homenav {
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(rgb(28, 44, 111), rgb(18, 28, 77));
+  min-width: 12vw;
   flex: 2 1 70rem;
   margin-top: 2px;
   align-items: center;
@@ -213,8 +219,8 @@ nav ul {
   background: transparent;
   font-size: 2rem;
   border: transparent;
-  padding-bottom: 2rem;
   max-width: 30vw;
+  max-height: 10vh;
   justify-content: left;
   align-items: center;
   color: white;
@@ -237,15 +243,15 @@ nav ul {
   min-height: 4vh;
   min-width: 7vw;
   text-align: center;
-  color: white;
   list-style: none;
   font-size: 1.5rem;
   text-align: center;
   vertical-align: middle;
+  margin-top: 1rem;
 }
 
 #dropDownItem:hover {
-  background-color: rgb(28, 44, 111);
+  font-size: 2rem;
 }
 
 #account-links {
@@ -637,8 +643,8 @@ For Items Featured List */
   /*box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);*/
   width: 48rem;
   min-height: 40rem;
-  max-height: 50rem;
-  background-color: rgb(253, 247, 218);
+  max-height: 70rem;
+  background-image: linear-gradient(whitesmoke, rgb(167, 166, 166));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
   margin: 8rem 5rem;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
@@ -725,9 +731,10 @@ For Items Featured List */
   min-width: 50vw;
   max-width: 90%;
   margin: 1rem 1rem;
-  background-color: cornsilk;
+  background-color: transparent;
   background-size: cover;
   padding: 2rem;
+  /*
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
   /* For IE 8*/
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
@@ -735,7 +742,7 @@ For Items Featured List */
   padding: 10px;
   -moz-box-shadow: 0px 0px 7px #000000;
   -webkit-box-shadow: 0px 0px 7px #000000;
-  box-shadow: 0px 0px 7px #000000;
+  /*box-shadow: 0px 0px 7px #000000;*/
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -778,8 +785,8 @@ For Items Featured List */
   justify-content: center;
   align-items: center;
   padding-bottom: 2vh;
-  min-width: 30vw;
-  max-width: 40vw;
+  min-width: 20vw;
+  max-width: 30vw;
 }
 
 .itemDetails-image img {
@@ -849,10 +856,10 @@ For Items Featured List */
 .checkout-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: rgb(251, 246, 223);
+  background-image: linear-gradient(rgb(172, 172, 172), whitesmoke);
   border: 0.2rem solid rgb(59, 59, 59);
   background-size: cover;
   padding: 2rem;

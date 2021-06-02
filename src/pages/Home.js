@@ -47,7 +47,8 @@ const Home = () => {
                 <h4>
                     <div>
                     Public figures: choose your cause and list anything: 
-                    from an autographed ball to a pair of shoes in the back of your closet
+                    from an autographed ball to a pair of shoes in the back of your closet. Then choose a platform for sale:
+                    either a raffle with a ticket price of your choice or auction where you are able to set the starting bid!
                     </div>
 
                 </h4>

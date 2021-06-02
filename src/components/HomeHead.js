@@ -15,7 +15,7 @@ const HomeHead = () => {
     return (
         
         <section className="home-head">
-        <header >
+        <header className="home-top">
             <div id="home-head-nav">
                 <h2 id="logo">ShareMore</h2>
                 <DropDown id="trans"></DropDown>
