@@ -15,7 +15,7 @@ import awsExports from "./aws-exports";
 import SiSu from "./pages/SiSu";
 import Admin from "./pages/Admin";
 import ItemDetails from "./pages/ItemDetails";
-import Doner from "./pages/Doner";
+import Donor from "./pages/Donor";
 import PlaceBidForm from "./components/PlaceBidForm";
 
 Amplify.configure(awsExports);
@@ -38,7 +38,7 @@ const App = () => {
         <Route exact path="/admin" component={Admin}/>
 
         
-        <Route exact path="/doner" component={Doner}/>
+        <Route exact path="/donor" component={Donor}/>
 
         
         <Route path="/items/:id" children={<ItemDetails></ItemDetails>} />

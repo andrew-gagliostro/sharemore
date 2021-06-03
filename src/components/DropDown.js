@@ -26,7 +26,7 @@ const DropDown = () => {
         <Dropdown.Menu id="homenav" >
             <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/') }}>Home</Dropdown.Item>
             <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/shop') }}>Shop ShareMore</Dropdown.Item>
-            <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/doner') }}>Doner/Partner Info</Dropdown.Item>
+            <Dropdown.Item id="dropDownItem" onClick={() => { history.push('/donor') }}>Donor/Partner Info</Dropdown.Item>
             <Dropdown.Item id="dropDownItem"><AccountLinks></AccountLinks></Dropdown.Item>
         </Dropdown.Menu>
         </Dropdown>

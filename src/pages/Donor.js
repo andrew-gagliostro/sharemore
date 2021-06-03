@@ -3,16 +3,16 @@ import HomeHead from "../components/HomeHead";
 import '../index.css';
 import Footer from "../components/Footer";
 
-const Doner = () => {
+const Donor = () => {
     return (
         <>
             <HomeHead></HomeHead>
             
-            <h3 className="doner-head">
-                Doner / Partner Information
+            <h3 className="donor-head">
+                Donor / Partner Information
             </h3>
             
-            <section className="doner-info">
+            <section className="donor-info">
                 <h4>
                 My name is Andrew Gagliostro and over the past few months I have been building a nonprofit called ShareMore. 
                 ShareMore’s goal is to connect fans with the people they adore to benefit worthy causes worldwide. 
@@ -32,7 +32,8 @@ const Doner = () => {
 
                 <h4> 
                 A no-cost sale of anything you choose to donate is just small part of how we plan to generate funds for your causes. What we are offering is an opportunity to 
-                join a movement where we not only generate fund from sales, but also through leveraging different forms of advertisements and brand deals. 
+                join a movement where we not only generate funds from sales, but also through leveraging different forms of advertisements and brand deals. For-profit organizations 
+                do this to generate millions in value for their stakeholders, but we plan to generate millions for the people and causes that really need it.
                 That means that aside from the funds generated from your auction or raffle, we will also be able to help the world through
                 each person who clicks on that link. We ask you to buy into our movement because with each celebrity that joins we have more 
                 opportunity and merit to generate funds through other streams and build internal efforts to give back.
@@ -65,4 +66,4 @@ const Doner = () => {
     )
 }
 
-export default Doner;
+export default Donor;

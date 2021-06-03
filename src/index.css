@@ -397,8 +397,8 @@ nav ul {
   position: relative;
 }
 
-/* Doner Section */
-.doner-info {
+/* donor Section */
+.donor-info {
   color: white;
   background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
   background-repeat: no-repeat;
@@ -415,7 +415,7 @@ nav ul {
   text-align: center;
 }
 
-.doner-head {
+.donor-head {
   font-size: 3.5rem;
   font-weight: 5;
   justify-content: left;
@@ -429,7 +429,7 @@ nav ul {
   opacity: 1;
 }
 
-.doner-info h4 {
+.donor-info h4 {
   padding: 5rem;
   font-weight: 150;
   color: rgb(170, 168, 168);

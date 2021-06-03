@@ -16,7 +16,7 @@ const Footer = () => {
             <div id="footer-div">| Thank you for visiting ShareMore! |</div><br/>
             <div id="footer-div">| Impact |</div><br/>
             <div id="footer-div">| Contact: argagliostro@gmail.com |</div><br/>
-            <div onClick={() => { history.push('/doner') }} id="footer-div">| Get Involved |</div><br/>
+            <div onClick={() => { history.push('/donor') }} id="footer-div">| Get Involved |</div><br/>
             </section>
             <section id="footer-right">
                <h4><span>&#169;</span>ShareMore, 2020 </h4>
