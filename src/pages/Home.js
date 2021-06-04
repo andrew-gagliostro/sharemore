@@ -33,7 +33,7 @@ const Home = () => {
                 <h4>
                     <div>
                     Our goal is to monitize the fandom industry: allowing true fans to get the merchandise 
-                    they want while distributing profits to worthy causes that buyers and sellers may choose!
+                    they want while distributing profits to the worthy causes that sellers choose!
                     </div>
                     
 
@@ -62,7 +62,7 @@ const Home = () => {
 
                 <h4>
                     <div>
-                        Fans: find something that strikes a chord and buy now or place a bid!
+                        Fans: find something that strikes a chord and buy a ticket or place a bid!
                     </div>
 
                 </h4>

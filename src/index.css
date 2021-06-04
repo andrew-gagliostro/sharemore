@@ -221,6 +221,7 @@ nav ul {
   border: transparent;
   max-width: 30vw;
   max-height: 10vh;
+  border: 0px;
   justify-content: left;
   align-items: center;
   color: white;

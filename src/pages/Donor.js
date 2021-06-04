@@ -22,7 +22,7 @@ const Donor = () => {
                 <h4>
                 ShareMore is a marketplace where we ask celebrities and public figures to donate anything you may have laying around that a fan may like to get their hands on! 
                 It’s up to you to choose where the profit goes: keep some if you’d like, and choose charity or organization to recieve the rest on your behalf!
-                We take no profit at all.
+                We only cover our costs, taking no profit.
                 </h4>
 
                 <h4>
@@ -32,11 +32,21 @@ const Donor = () => {
 
                 <h4> 
                 A no-cost sale of anything you choose to donate is just small part of how we plan to generate funds for your causes. What we are offering is an opportunity to 
-                join a movement where we not only generate funds from sales, but also through leveraging different forms of advertisements and brand deals. For-profit organizations 
-                do this to generate millions in value for their stakeholders, but we plan to generate millions for the people and causes that really need it.
+                join a <b>movement where we not only fundraise through sales, but also through leveraging different forms of advertisements and brand deals</b>. 
+
+                There are countless tech platforms that generate billions of dollars in revenue each year through digital advertising efforts: in for-profit organizations,
+                most of these funds go towards benefitting the organization and its stakeholders. At ShareMore, we are trying to change the game: <b>generating ad revenue from 
+                socially responsible organizations and redistributing profits to help the causes you choose. </b>
+
+                </h4>
+
+
+                <h4>
+
                 That means that aside from the funds generated from your auction or raffle, we will also be able to help the world through
                 each person who clicks on that link. We ask you to buy into our movement because with each celebrity that joins we have more 
                 opportunity and merit to generate funds through other streams and build internal efforts to give back.
+
                 </h4>
 
 
