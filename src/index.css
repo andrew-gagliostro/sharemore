@@ -60,7 +60,7 @@ a {
 
 .btn {
   padding: 1.5rem 6rem;
-  background-image: linear-gradient(rgb(28, 44, 111), rgb(9, 14, 40));
+  background-color: rgb(9, 14, 40);
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
@@ -102,6 +102,13 @@ a {
   flex-direction: column;
   min-height: 60vh;
   max-height: 80vh;
+}
+
+#top {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(9, 14, 40);
+  z-index: 20;
 }
 
 .other-head {
