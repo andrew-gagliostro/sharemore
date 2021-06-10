@@ -711,7 +711,7 @@ For Items Featured List */
 /* Item Details Section */
 
 .details {
-  display: flex;
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -788,6 +788,12 @@ For Items Featured List */
   width: 100%;
   align-items: center;
   text-align: center;
+}
+
+#ItemDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .itemDetails-image {
