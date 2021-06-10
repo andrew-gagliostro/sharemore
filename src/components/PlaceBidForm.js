@@ -46,7 +46,7 @@ const PlaceBidForm = () => {
 
   return (
 
-    <section className="details">
+    <section>
     <OtherHead></OtherHead>
     <section className="placeBid-details">
       

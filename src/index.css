@@ -728,7 +728,7 @@ For Items Featured List */
   margin: auto;
   text-align: center;
   padding-bottom: 5vh;
-  min-height: 80vh;
+  min-height: 85vh;
 }
 
 .detail-description {
@@ -855,6 +855,7 @@ For Items Featured List */
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  padding-top: 12rem;
   height: auto;
   text-align: center;
   background-color: whitesmoke;
