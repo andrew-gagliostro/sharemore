@@ -17,7 +17,7 @@ const DropDown = () => {
         
         <Dropdown>
         <Dropdown.Toggle id="dropDownMenu">
-        <div className="container">
+        <div>
             <div className="bar"></div>
             <div className="bar"></div>
             <div className="bar"></div>

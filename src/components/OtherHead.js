@@ -5,16 +5,8 @@ import React from 'react';
 import DropDown from './DropDown';
 
 
-
-
-
-
-const OtherHead = () => {
-
-
-    return (
         
-        
+        /*
         <section className="other-head">
         <header id="top" className="home-top">
             <div id="other-head-nav">
@@ -23,7 +15,21 @@ const OtherHead = () => {
             </div>
         </header>
         </section>
-       
+        */
+
+
+
+const OtherHead = () => {
+
+
+    return (
+        <header id="top" className="home-top">
+            <div id="home-head-nav">
+                <h2 id="logo">ShareMore</h2>
+                <DropDown id="trans"></DropDown>
+            </div>
+        </header>
+        
     )
 }
 

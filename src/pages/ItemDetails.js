@@ -33,8 +33,8 @@ const ItemDetails = () => {
 
   return (
     <>
-    <section className="details">
     <OtherHead></OtherHead>
+    <section className="details">
     <section className="item-details">
       <div className ="side-details">
         <div className="itemDetails-image">
