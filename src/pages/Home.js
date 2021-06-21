@@ -22,7 +22,7 @@ const Home = () => {
             <section className="about-info">
                 <h4>
                     <div>
-                    ShareMore is the only mission-based online marketplace working to connect celebrities 
+                    ShareMore is a mission-based fundraising platform working to connect celebrities 
                     with their fans
                     </div>
 
@@ -32,8 +32,8 @@ const Home = () => {
 
                 <h4>
                     <div>
-                    Our goal is to monitize the fandom industry: allowing true fans to get the merchandise 
-                    they want while distributing profits to the worthy causes that sellers choose!
+                    Our goal is to monitize the fandom industry: giving true fans a chance to get the merchandise 
+                    they want while redistributing 100% of raffle donations to the worthy causes that celebrities choose!
                     </div>
                     
 
@@ -47,8 +47,8 @@ const Home = () => {
                 <h4>
                     <div>
                     Public figures: choose your cause and list anything: 
-                    from an autographed ball to a pair of shoes in the back of your closet. Then choose a platform for sale:
-                    either a raffle with a ticket price of your choice or auction where you are able to set the starting bid!
+                    from an autographed ball to a pair of shoes in the back of your closet. Then choose 
+                    a ticket price for your item, post a link on your social media, and watch the donations roll in!
                     </div>
 
                 </h4>
@@ -62,7 +62,8 @@ const Home = () => {
 
                 <h4>
                     <div>
-                        Fans: find something that strikes a chord and buy a ticket or place a bid!
+                        Fans: find something that strikes a chord and buy a ticket: 100% of your purchase will 
+                        be donated to the nonprofit or charity displayed on the listing!
                     </div>
 
                 </h4>

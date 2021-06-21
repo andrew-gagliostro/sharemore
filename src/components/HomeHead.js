@@ -23,7 +23,7 @@ const HomeHead = () => {
         </header>
         <section className="home-hero">
             <h2>ShareMore</h2>
-            <h3>A nonprofit working to connect fans and public figures </h3>
+            <h3>A social enterprise working to connect fans and public figures </h3>
             <h3>for causes that matter</h3>
         </section>
         </section>

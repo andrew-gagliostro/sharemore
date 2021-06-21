@@ -275,6 +275,7 @@ nav ul {
   font-family: "proxima-nova", sans-serif;
   font-weight: 500;
 }
+
 #otherlogo {
   display: flex;
   color: rgb(93, 92, 92);
@@ -328,10 +329,6 @@ nav ul {
 
 #sharePic {
   margin: 4%;
-}
-
-.about-info img {
-  /*box-shadow: rgb(9, 13, 18) 0px 20px 40px -10px;*/
 }
 
 /*Footer STuff */
@@ -498,6 +495,8 @@ nav ul {
   border-top: 2px solid black;
   opacity: 1;
 }
+
+/*Shop stuff */
 
 .shop-info {
   width: 70%;

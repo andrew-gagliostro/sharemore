@@ -14,15 +14,19 @@ const Donor = () => {
             
             <section className="donor-info">
                 <h4>
-                My name is Andrew Gagliostro and over the past few months I have been building a nonprofit called ShareMore. 
+                My name is Andrew Gagliostro and over the past few months I have been building a social enterprise called ShareMore. 
                 ShareMore’s goal is to connect fans with the people they adore to benefit worthy causes worldwide. 
+                </h4>
+
+                <h4>
+                A social enterprise is a business that strives to efficiently and responsibly maximize profits 
+                with the goal of maximizing benefits to society and the environment.
                 </h4>
 
     
                 <h4>
-                ShareMore is a marketplace where we ask celebrities and public figures to donate anything you may have laying around that a fan may like to get their hands on! 
-                It’s up to you to choose where the profit goes: keep some if you’d like, and choose charity or organization to recieve the rest on your behalf!
-                We only cover our costs, taking no profit.
+                ShareMore is a raffle-based fundraising platform where we ask celebrities and public figures to donate anything you may have laying around that a fan may like to get their hands on. 
+                It’s up to you to choose where the funds from ticket sales go: keep some if you’d like, and choose charity or organization to recieve the rest on your behalf!
                 </h4>
 
                 <h4>
@@ -31,11 +35,11 @@ const Donor = () => {
                 </h4>
 
                 <h4> 
-                A no-cost sale of anything you choose to donate is just small part of how we plan to generate funds for your causes. What we are offering is an opportunity to 
+                A no-cost sale of anything you choose to donate is just one part of how we plan to generate funds for your causes. What we are offering is an opportunity to 
                 join a <b>movement where we not only fundraise through sales, but also through leveraging different forms of advertisements and brand deals</b>. 
 
-                There are countless tech platforms that generate billions of dollars in revenue each year through digital advertising efforts: in for-profit organizations,
-                most of these funds go towards benefitting the organization and its stakeholders. At ShareMore, we are trying to change the game: <b>generating ad revenue from 
+                There are countless tech platforms that generate billions of dollars in revenue each year through digital advertising efforts: in most for-profit organizations,
+                these funds go towards benefitting the organization and its stakeholders. At ShareMore, we are trying to change the game: <b>generating ad revenue from 
                 socially responsible organizations and redistributing profits to help the causes you choose. </b>
 
                 </h4>
@@ -44,8 +48,8 @@ const Donor = () => {
                 <h4>
 
                 That means that aside from the funds generated from your auction or raffle, we will also be able to help the world through
-                each person who clicks on that link. We ask you to buy into our movement because with each celebrity that joins we have more 
-                opportunity and merit to generate funds through other streams and build internal efforts to give back.
+                each person who clicks on that link. We ask you to buy into our movement because with each celebrity that joins, we have more 
+                opportunity and merit to generate funds and build internal efforts to give back.
 
                 </h4>
 
@@ -53,8 +57,8 @@ const Donor = () => {
                 <h4>
                 In the world we live in, fandom merchandise is usually in the hands of someone who has disposable income 
                 or is lucky enough to be in the right place at the right time.
-                ShareMore’s goal is to transform the fandom industry to one that, rather than supporting privilidge and luck, maximizes raffle accessibility and auction exposure (and in turn profit) 
-                while redistributing all funds to those who need it most.
+                ShareMore’s goal is to transform the fandom industry to one that, rather than supporting those with money and luck, maximizes raffle accessibility (and in turn profit) 
+                while redistributing funds to those who need it most.
                 </h4>
                 
 
