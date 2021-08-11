@@ -33,8 +33,8 @@ const Shop = () => {
                     <div className = "shop-info">
                     <h4> {itemSeller}</h4>
                     <div>{itemName}</div>
-                    <div> Current Price: ${curPrice} USD </div>
-                    <p> Bidding Ends: {endDate} @ 12:00 AM EST</p>
+                    <div> Ticket Price: ${curPrice} USD </div>
+                    <p> Raffle Ends: {endDate} @ 12:00 AM EST</p>
                     <p> NOTICE: EXISTING PRODUCT OR ENDORSED BY CELEBRITY: EXAMPLE ITEMS</p>
                     </div>
                     <Link to={`items/${id}`} className="btn" id="shop-btn">details</Link>

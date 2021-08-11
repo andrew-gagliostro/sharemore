@@ -3,7 +3,7 @@ const documentClient = new AWS.DynamoDB.DocumentClient();
 const ITEMBID_TABLE = "ItemBid-lnleozrryfhm3o4tgwvtwnll4y-smdev";
 const ITEMBID_TYPE = "ItemBid";
 
-
+/*
 const getUserEmail = async (event) => {
   const params = {
     UserPoolId: USER_POOL_ID,
@@ -16,7 +16,7 @@ const getUserEmail = async (event) => {
     }
   });
   return email;
-};
+};*/
 
 const createItemBid = async (payload) => {
     const { id, item_id, bid_price, userEmail} = payload;
@@ -43,12 +43,15 @@ exports.handler = async (event) => {
 
         let payload = event.arguments.input;
 
+        /*
+
         const email = getUserEmail(event);
 
         if(email !== event.arguments.input.userEmail) {
           console.log("wrong email inputted");
           throw new Error(err);
         }
+        */
 
         /* 
         if (getUserEmail returns false) {

@@ -58,7 +58,7 @@ const PlaceBidForm = () => {
         </div>
         <h3>{itemSeller}</h3>
         <p>{endDate} @ 12:00 AM EST</p>
-        <h4>Current Winning Bid (USD): ${curPrice}</h4>
+        <h4>Ticket Price (USD): ${curPrice}</h4>
         <button
           className="btn"
           onClick={() => {
@@ -80,7 +80,7 @@ const PlaceBidForm = () => {
         />
         </div>
         <div className="bidInfo">
-            <p><label htmlFor="price">Bid Price ($)</label>
+            <p><label htmlFor="price">Ticket Quantity</label>
                 <input
                     name="price"
                     type="text"
@@ -90,7 +90,7 @@ const PlaceBidForm = () => {
                 /></p>
         </div>
         <div className="featured-form">
-            <p><label>Confirm Your Bid?</label>
+            <p><label>Confirm Your Purchase?</label>
                 <input type="checkbox"
                     className="featured-checkbox"
                     checked={confirmed.checked}
