@@ -56,6 +56,22 @@ export const listItemBids = /* GraphQL */ `
     }
   }
 `;
+export const getItem = /* GraphQL */ `
+  query GetItem($id: ID!) {
+    getItem(id: $id) {
+      id
+      itemSeller
+      itemName
+      description
+      image
+      featured
+      curPrice
+      endDate
+      createdAt
+      updatedAt
+    }
+  }
+`;
 export const listItems = /* GraphQL */ `
   query ListItems(
     $filter: ModelItemFilterInput
@@ -76,22 +92,6 @@ export const listItems = /* GraphQL */ `
         updatedAt
       }
       nextToken
-    }
-  }
-`;
-export const getItem = /* GraphQL */ `
-  query GetItem($id: ID!) {
-    getItem(id: $id) {
-      id
-      itemSeller
-      itemName
-      description
-      image
-      featured
-      curPrice
-      endDate
-      createdAt
-      updatedAt
     }
   }
 `;
