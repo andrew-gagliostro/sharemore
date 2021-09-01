@@ -63,7 +63,7 @@ const ItemBidProvider = ({children}) => {
         authMode: "API_KEY"
         });*/
         let data = await API.graphql(graphqlOperation(listItemBids));
-        const itemBids = data.listItemBids.items;
+        const itemBids = data.listItemBids;
 
         setItemBids(itemBids);
         setLoading(false);

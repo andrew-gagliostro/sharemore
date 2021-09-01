@@ -35,6 +35,7 @@ const PlaceBidForm = () => {
 
   // Handle form submission.
   const handleSubmit = async (event) => {
+      event.preventDefault();
       if(confirmed.checked && !(BidDetails.userEmail === "") && !(BidDetails.item_id === "") && !(BidDetails.bid_price === "")) {
           console.log(BidDetails);
           placeBid(BidDetails);

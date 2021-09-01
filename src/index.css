@@ -472,6 +472,11 @@ nav ul {
   text-align: center;
 }
 
+.home-hero section {
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+}
+
 .hero h3 {
   padding: 3rem;
 }
